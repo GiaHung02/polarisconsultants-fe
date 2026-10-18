@@ -1,13 +1,13 @@
 :root {
-  
+
 
   /* Layout */
-  --container: 1440px;
+  --container-width: 1440px;
 
   /* -------------------------------------------------------------------------- */
   /* Typography - Manrope                                                        */
   /* -------------------------------------------------------------------------- */
-  --font-gibson: "canada-type-gibson", Arial, Helvetica, sans-serif;
+  // --font-manrope: "--font-manrope";
 
   /* -------------------------------------------------------------------------- */
   /* Font Weight                                                                */
@@ -17,22 +17,23 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  --font-weight-heavy: 900;
+  --font-weight-heavy: 800;
 
   /* -------------------------------------------------------------------------- */
   /* Font Size                                                                  */
   /* -------------------------------------------------------------------------- */
-  --font-size-h1: 2.2rem;
-  --font-size-h2: 1.6rem;
-  --font-size-body: 1.6rem;
-  --font-size-body-small: 1.4rem;
-  --font-size-menu-item: 1.2rem;
-  --font-size-label: 1.4rem;
-  --font-size-section-heading: 1.4rem;
-  --font-size-block-heading-small: 1.2rem;
-  --font-size-table-heading: 2.2rem;
-  --font-size-table-subheading: 1.6rem;
-  
+  --font-size-xs: 0.75rem; // 12px
+  --font-size-sm: 0.875rem; // 14px
+  --font-size-base: 1rem; // 16px
+  --font-size-lg: 1.125rem; // 18px
+  --font-size-xl: 1.25rem; // 20px
+  --font-size-2xl: 1.5rem; // 24px
+  --font-size-3xl: 1.875rem; // 30px
+  --font-size-4xl: 2.25rem; // 36px
+  --font-size-5xl: 3rem; // 48px
+  --font-size-6xl: 3.75rem; // 60px
+  --font-size-7xl: 4.5rem; // 72px
+
   /* -------------------------------------------------------------------------- */
   /* Line Height                                                                */
   /* -------------------------------------------------------------------------- */
@@ -47,36 +48,68 @@
   /* -------------------------------------------------------------------------- */
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-grey: rgba(0, 0, 0, 0.6);
-  --color-light-grey: rgba(0, 0, 0, 0.2);
-  --color-light-grey-2: rgba(0, 0, 0, 0.1);
-  --color-light-grey-3: rgba(0, 0, 0, 0.03);
-  --color-light-grey-4: rgba(0, 0, 0, 0.05);
   --color-transparent: transparent;
 
   /* -------------------------------------------------------------------------- */
   /* Colors                                                                     */
   /* -------------------------------------------------------------------------- */
-  --color-primary-1: #D20328;
-  --color-secondary-1: #A41222;
-  --color-secondary-2: #7B141A;
-  --color-secondary-3: #541211;
-  --color-secondary-4: #EBE5DF;
+  --color-primary: #002b60;
+  --color-secondary: #215695;
 
-  --color-context-1: #d203284d;
-  --color-context-2: #ECF2D9;
-  --color-context-3: #093E26;
+  --color-accent-1: #E69A45;
+  --color-accent-2: #D97736;
+
+  --color-primary-hover: var(--color-secondary);
+  --color-accent-hover: var(--color-accent-2);
+
+  --color-success: #15803d;
+  --color-error: #dc2626;
+  --color-warning: #b45309;
+
 
   /* -------------------------------------------------------------------------- */
   /* Border Radius                                                                     */
   /* -------------------------------------------------------------------------- */
-  --border-radius-button: 6px;
+  --border-radius-none: 0;
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-2xl: 24px;
+  --border-radius-full: 9999px;
 
-   /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
   /* Sapcing                                                                    */
   /* -------------------------------------------------------------------------- */
-  --spacing-section-wrap : 80px;
-  --spacing-section : 50px;
-  --spacing-between-content-section : 50px;
-  --spacing-left-text-content-two-column-layout  : clamp(20px, calc(-181.004px + 16.736vw), 60px);
+
+  /*Khoảng cách nhỏ - Icon với text, label với input, các phần tử trong button, khoảng cách giữa các dòng thông tin.*/
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+
+
+  /*Khoảng cách thành phần - Giữa các card, giữa heading và nội dung, giữa các nhóm thông tin.*/
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /*Khoảng cách nhóm - Giữa heading của section và grid card, giữa các cụm nội dung lớn.*/
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /*Khoảng cách section - Padding trên/dưới của các section lớn trên desktop, tùy mật độ nội dung.*/
+  --spacing-4xl: 80px;
+  --spacing-5xl: 96px;
+  --spacing-6xl: 128px;
+
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Transition                                                                 */
+  /* -------------------------------------------------------------------------- */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
 }

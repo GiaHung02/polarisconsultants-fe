@@ -15,34 +15,20 @@ html {
 
 
 body {
-  font-family: var(--font-gibson);
+  font-family: var(--font-manrope), sans-serif;;
   background: var(--color-white);
-  color: var(--color-grey);
-  font-size: var(--font-size-body);
+  color: var(--color-black);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
 
   @include custom-scrollbar();
 }
 
 .container {
-  max-width: var(--container-max-width);
+  max-width: var(--container-width);
   width: 90%;
   margin: 0 auto;
   position: relative;
-}
-
-h1 {
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  color: var(--color-black);
-}
-
-h2 {
-  font-size: var(--font-size-h2);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  color: var(--color-black);
 }
 
 .srOnly {

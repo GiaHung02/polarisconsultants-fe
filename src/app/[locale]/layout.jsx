@@ -1,6 +1,7 @@
 import { Manrope } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { routing } from '@/i18n/routing';
+import "../../../styles/global.scss";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
