@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
   const t = useTranslations('HomePage');
