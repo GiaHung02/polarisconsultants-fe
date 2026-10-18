@@ -1,5 +1,9 @@
 {
+  "Header": {
+    "company": "Công Ty TNHH Tư Vấn Thiết Kế Xây Dựng Polaris"
+  },
   "HomePage": {
     "title": "Xin Chao!"
-  }
+  },
+  "Footer": {}
 }

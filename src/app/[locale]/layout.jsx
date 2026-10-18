@@ -1,7 +1,9 @@
 import { Manrope } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { routing } from '@/i18n/routing';
+import { routing } from "@/src/i18n/routing";
 import "../../../styles/global.scss";
+import Header from "@/src/components/layout/Header/Header";
+import Footer from "@/src/components/layout/Footer/Footer";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -23,7 +25,13 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className={`${manrope.className}`}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+
+          <main>{children}</main>
+
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
