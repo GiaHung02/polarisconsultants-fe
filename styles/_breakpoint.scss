@@ -1,0 +1,47 @@
+@mixin respond-unmobile() {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin respond-mobile() {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin respond-tabletMedium() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin respond-tablet() {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin respond-smalldesktop() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin respond-desktopnormal() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin respond-desktoplarge() {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin respond-hover() {
+  @include respond-unmobile() {
+    @content;
+  }
+}

@@ -1,0 +1,36 @@
+
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Chrome/Safari/Opera */
+	-khtml-user-select: none;
+	/* Konqueror */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+	                                  not supported by any browser */
+}
+
+@mixin custom-scrollbar($width: 6px, $thumb-bg: grey, $thumb-radius: 999px) {
+	&::-webkit-scrollbar {
+		width: $width;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $thumb-bg;
+		border-radius: $thumb-radius;
+	}
+}

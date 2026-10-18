@@ -1,0 +1,92 @@
+@use "./reset";
+@use "./index" as *;
+@use "./swiper";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+
+body {
+  font-family: var(--font-gibson);
+  background: var(--color-white);
+  color: var(--color-grey);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+
+  @include custom-scrollbar();
+}
+
+.container {
+  max-width: var(--container-max-width);
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.introBlock+.accordionBlock,
+.introBlock+.sectionBlock {
+  margin-top: var(--spacing-section);
+}
+
+
+.accordionBlock+.accordionBlock,
+.accordionBlock+.sectionBlock,
+.sectionBlock+.sectionBlock,
+.sectionBlock+.accordionBlock {
+  margin-top: var(--spacing-section-wrap);
+}
+
+
+.contentInner {
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: padding 300ms ease;
+
+  >section:first-of-type {
+    margin-top: var(--spacing-section);
+  }
+
+  section+section {
+    margin-top: var(--spacing-between-content-section);
+  }
+
+}
+
+section[id] {
+  scroll-margin-top: 140px;
+}
