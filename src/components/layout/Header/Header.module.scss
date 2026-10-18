@@ -1,9 +1,13 @@
 @use "@/styles/index.scss" as *;
 
 .header {
+    box-shadow: -1px 4px 29px rgb(0 0 0 / 21%);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
 
     .top_header {
         background-color: var(--color-primary);
+
         .top_header_container {
             display: grid;
             grid-template-columns: 1fr auto 1fr;
@@ -26,7 +30,37 @@
                 justify-content: flex-end;
                 align-items: center;
 
-                gap: var(--spacing-lg);
+                gap: var(--spacing-xl);
+            }
+        }
+    }
+
+    .main_header {
+        color: var(--color-secondary);
+
+        .main_header_container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            column-gap: var(--spacing-lg);
+            padding-block: var(--spacing-sm);
+
+            .main_header_left {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: var(--spacing-xl);
+            }
+
+            .main_header_center {
+                width: 200px;
+            }
+
+            .main_header_right {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: var(--spacing-xl);
             }
         }
     }

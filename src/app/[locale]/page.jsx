@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>{t('title')}</h1>
-        <p>xinchao</p>
       </main>
     </div>
   );

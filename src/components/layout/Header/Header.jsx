@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import style from "./Header.module.scss";
+import Image from "next/image";
 
 export default function Header() {
     return (
@@ -15,7 +16,23 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={style.main_header}>Main header</div>
+
+            <div className={style.main_header}>
+                <div className={clsx("container", style.main_header_container)}>
+                    <div className={style.main_header_left}>
+                        <div>Lĩnh Vực Kinh Doanh</div>
+                        <div> Tin Tức</div>
+                        <div>Phát Triển Bền Vững</div>
+                    </div>
+                    <div className={style.main_header_center}>
+                        {/* <Image src={""} alt=""/> */}
+                    </div>
+                    <div className={style.main_header_right}>
+                        <div>Giới Thiệu</div>
+                        <div>Dự Án</div>
+                    </div>
+                </div>
+            </div>
         </header>
     );
 }
