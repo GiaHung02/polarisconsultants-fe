@@ -2,18 +2,22 @@ import clsx from "clsx";
 import style from "./Header.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { header_data } from "@/data/header.data";
 
 export default function Header() {
+    const { top_header, main_header } = header_data;
+
     return (
         <header className={style.header}>
             <div className={style.top_header}>
                 <div className={clsx("container", style.top_header_container)}>
-                    <div className={style.top_header_left}> Công Ty TNHH Tư Vấn Thiêt Kế Xây Dựng Polaris </div>
-                    <div className={style.top_header_center}> Minh bạch - Chuyên nghiệp - Bền vững </div>
+                    <div className={style.top_header_left}>{top_header.company_name}</div>
+                    <div className={style.top_header_center}>{top_header.slogan}</div>
                     <div className={style.top_header_right}>
-                        <div>Tuyển Dụng</div>
-                        <div>Liên Hệ</div>
-                        <div>VN</div>
+                        {top_header.links.map((link) => (
+                            <div key={link.id}>{link.name}</div>
+                        ))}
+                        <div>{top_header.language}</div>
                     </div>
                 </div>
             </div>
@@ -21,9 +25,11 @@ export default function Header() {
             <div className={style.main_header}>
                 <div className={clsx("container", style.main_header_container)}>
                     <div className={style.main_header_left}>
-                        <Link href="#">Lĩnh Vực Kinh Doanh</Link>
-                        <Link href="#">Tin Tức</Link>
-                        <Link href="#">Phát Triển Bền Vững</Link>
+                        {main_header.left.map((category) => (
+                            <Link key={category.id} href={category.slug}>
+                                {category.name}
+                            </Link>
+                        ))}
                     </div>
                     <div className={style.main_header_center}>
                         <Image
@@ -35,8 +41,11 @@ export default function Header() {
                         />
                     </div>
                     <div className={style.main_header_right}>
-                        <Link href="#">Giới Thiệu</Link>
-                        <Link href="#">Dự Án</Link>
+                        {main_header.right.map((category) => (
+                            <Link key={category.id} href={category.slug}>
+                                {category.name}
+                            </Link>
+                        ))}
                     </div>
                     <button
                         className={style.main_header_menu}

@@ -1,6 +1,6 @@
-export const headerData = {
-    topHeader: {
-        companyName: "Công Ty TNHH Tư Vấn Thiết Kế Xây Dựng Polaris",
+export const header_data = {
+    top_header: {
+        company_name: "Công Ty TNHH Tư Vấn Thiết Kế Xây Dựng Polaris",
         slogan: "Minh bạch - Chuyên nghiệp - Bền vững",
         links: [
             {
@@ -16,7 +16,7 @@ export const headerData = {
         ],
         language: "VN",
     },
-    mainHeader: {
+    main_header: {
         left: [
             {
                 id: 1,
