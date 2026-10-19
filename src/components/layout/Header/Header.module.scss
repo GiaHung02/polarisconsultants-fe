@@ -52,6 +52,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                align-self: stretch;
                 gap: var(--spacing-xl);
             }
 
@@ -63,7 +64,61 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+                align-self: stretch;
                 gap: var(--spacing-xl);
+            }
+
+            .main_header_category {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                &:hover,
+                &:focus-within {
+                    .subcategory_list {
+                        visibility: visible;
+                        opacity: 1;
+                        pointer-events: auto;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .subcategory_list {
+                position: absolute;
+                z-index: 10;
+                top: 100%;
+                left: 0;
+                min-width: 240px;
+                margin: 0;
+                padding: var(--spacing-lg);
+                list-style: none;
+                background-color: var(--color-white);
+                box-shadow: -1px 8px 20px rgb(0 0 0 / 14%);
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-8px);
+                transition:
+                    opacity 0.2s ease,
+                    transform 0.2s ease,
+                    visibility 0.2s ease;
+
+                li + li {
+                    margin-top: var(--spacing-md);
+                }
+
+                a {
+                    display: block;
+                    white-space: nowrap;
+                }
+            }
+
+            .main_header_right {
+                .subcategory_list {
+                    right: 0;
+                    left: auto;
+                }
             }
 
             .main_header_menu {

@@ -6,6 +6,21 @@ import { header_data } from "@/data/header.data";
 
 export default function Header() {
     const { top_header, main_header } = header_data;
+    const render_categories = (categories) =>
+        categories.map((category) => (
+            <div className={style.main_header_category} key={category.id}>
+                <Link href={category.slug}>{category.name}</Link>
+                {category.subcategories.length > 0 && (
+                    <ul className={style.subcategory_list}>
+                        {category.subcategories.map((subcategory) => (
+                            <li key={subcategory.id}>
+                                <Link href={subcategory.slug}>{subcategory.name}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+        ));
 
     return (
         <header className={style.header}>
@@ -25,11 +40,7 @@ export default function Header() {
             <div className={style.main_header}>
                 <div className={clsx("container", style.main_header_container)}>
                     <div className={style.main_header_left}>
-                        {main_header.left.map((category) => (
-                            <Link key={category.id} href={category.slug}>
-                                {category.name}
-                            </Link>
-                        ))}
+                        {render_categories(main_header.left)}
                     </div>
                     <div className={style.main_header_center}>
                         <Image
@@ -41,11 +52,7 @@ export default function Header() {
                         />
                     </div>
                     <div className={style.main_header_right}>
-                        {main_header.right.map((category) => (
-                            <Link key={category.id} href={category.slug}>
-                                {category.name}
-                            </Link>
-                        ))}
+                        {render_categories(main_header.right)}
                     </div>
                     <button
                         className={style.main_header_menu}
