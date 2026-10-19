@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { header_data } from "@/data/header.data";
 
-export default function Header() {
+export default function Header({ locale }) {
     const { top_header, main_header } = header_data;
+    const is_english = locale === "en";
     const render_categories = (categories) =>
         categories.map((category) => (
             <div className={style.main_header_category} key={category.id}>
@@ -30,9 +31,22 @@ export default function Header() {
                     <div className={style.top_header_center}>{top_header.slogan}</div>
                     <div className={style.top_header_right}>
                         {top_header.links.map((link) => (
-                            <div key={link.id}>{link.name}</div>
+                            <Link key={link.id} href={link.slug}>
+                                {link.name}
+                            </Link>
                         ))}
-                        <div>{top_header.language}</div>
+                        <div className={style.language_selector}>
+                            <Link href={is_english ? "/en" : "/vi"}>
+                                {is_english ? "EN" : "VN"}
+                            </Link>
+                            <ul className={style.language_list}>
+                                <li>
+                                    <Link href={is_english ? "/vi" : "/en"}>
+                                        {is_english ? "VN" : "EN"}
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export default async function RootLayout({ children, params }) {
     <html lang={locale} className={`${manrope.className}`}>
       <body>
         <NextIntlClientProvider>
-          <Header />
+          <Header locale={locale} />
 
           <main>{children}</main>
 

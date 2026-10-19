@@ -14,7 +14,6 @@ export const header_data = {
                 slug: "#",
             },
         ],
-        language: "VN",
     },
     main_header: {
         left: [
