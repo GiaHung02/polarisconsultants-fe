@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import style from "./Header.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -20,9 +21,9 @@ export default function Header() {
             <div className={style.main_header}>
                 <div className={clsx("container", style.main_header_container)}>
                     <div className={style.main_header_left}>
-                        <div>Lĩnh Vực Kinh Doanh</div>
-                        <div> Tin Tức</div>
-                        <div>Phát Triển Bền Vững</div>
+                        <Link href="#">Lĩnh Vực Kinh Doanh</Link>
+                        <Link href="#">Tin Tức</Link>
+                        <Link href="#">Phát Triển Bền Vững</Link>
                     </div>
                     <div className={style.main_header_center}>
                         <Image
@@ -34,8 +35,8 @@ export default function Header() {
                         />
                     </div>
                     <div className={style.main_header_right}>
-                        <div>Giới Thiệu</div>
-                        <div>Dự Án</div>
+                        <Link href="#">Giới Thiệu</Link>
+                        <Link href="#">Dự Án</Link>
                     </div>
                     <button
                         className={style.main_header_menu}

@@ -37,6 +37,10 @@
     .main_header {
         color: var(--color-secondary);
 
+        a {
+            text-decoration: none;
+        }
+
         .main_header_container {
             display: grid;
             grid-template-columns: 1fr auto 1fr;
