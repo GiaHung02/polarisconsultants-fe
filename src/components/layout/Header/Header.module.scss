@@ -68,7 +68,35 @@
         }
     }
 
-    @include respond-mobile() {
+    @include respond-desktoplarge() {
+        .top_header {
+            .top_header_container {
+                font-size: var(--font-size-xs);
+
+                .top_header_right {
+                    gap: var(--spacing-lg);
+                }
+            }
+        }
+
+        .main_header {
+            .main_header_container {
+                column-gap: var(--spacing-md);
+                font-size: var(--font-size-sm);
+
+                .main_header_left,
+                .main_header_right {
+                    gap: var(--spacing-lg);
+                }
+
+                .main_header_center {
+                    width: 180px;
+                }
+            }
+        }
+    }
+
+    @include respond-desktopnormal() {
         .top_header {
             .top_header_container {
                 grid-template-columns: 1fr;
