@@ -25,12 +25,31 @@ export default function Header() {
                         <div>Phát Triển Bền Vững</div>
                     </div>
                     <div className={style.main_header_center}>
-                        {/* <Image src={""} alt=""/> */}
+                        <Image
+                            src="/icons/temporary-logo.svg"
+                            alt="Polaris"
+                            width={157}
+                            height={48}
+                            priority
+                        />
                     </div>
                     <div className={style.main_header_right}>
                         <div>Giới Thiệu</div>
                         <div>Dự Án</div>
                     </div>
+                    <button
+                        className={style.main_header_menu}
+                        type="button"
+                        aria-label="Mở menu chính"
+                    >
+                        <Image
+                            src="/icons/hamburger-menu.svg"
+                            alt=""
+                            width={24}
+                            height={24}
+                            aria-hidden="true"
+                        />
+                    </button>
                 </div>
             </div>
         </header>
