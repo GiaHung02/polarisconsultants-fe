@@ -1,0 +1,60 @@
+@use "@/styles/index.scss" as *;
+
+.hero,
+.slider,
+.slide {
+  height: 80vh;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
+
+.slider {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-white);
+
+    &::after {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  :global(.swiper-pagination-bullet) {
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: var(--color-white);
+    opacity: 0.5;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    opacity: 1;
+  }
+}
+
+.slide {
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+}
+
+@include respond-tablet() {
+  .slider {
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider :global(.swiper-wrapper) {
+    transition-duration: 0ms !important;
+  }
+}
