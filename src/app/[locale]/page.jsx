@@ -6,16 +6,26 @@ import CompanyOverview from "@/src/components/sections/CompanyOverview/CompanyOv
 import FeaturedProjects from "@/src/components/sections/FeaturedProjects/FeaturedProjects";
 import Hero from "@/src/components/sections/Hero/Hero";
 
-export default function Home() {
+export default async function Home({ params }) {
+  const { locale } = await params;
+  const hero_content = hero_data[locale] ?? hero_data.vi;
+  const featured_projects_content =
+    featured_projects_data[locale] ?? featured_projects_data.vi;
+  const company_overview_content =
+    company_overview_data[locale] ?? company_overview_data.vi;
+
   return (
     <>
       <Suspense fallback={null}>
-        <Hero slides={hero_data} />
+        <Hero
+          aria_label={hero_content.aria_label}
+          slides={hero_content.slides}
+        />
       </Suspense>
       <Suspense fallback={null}>
-        <FeaturedProjects projects={featured_projects_data} />
+        <FeaturedProjects projects={featured_projects_content} />
       </Suspense>
-      <CompanyOverview content={company_overview_data} />
+      <CompanyOverview content={company_overview_content} />
     </>
   );
 }

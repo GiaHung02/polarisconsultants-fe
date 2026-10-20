@@ -1,27 +1,39 @@
-export const hero_data = [
-    {
-        id: 1,
-        image: "/images/hero-image-1.jpg",
-        alt: "hero image 1",
-    },
-    {
-        id: 2,
-        image: "/images/hero-image-2.jpg",
-        alt: "hero image 2",
-    },
-    {
-        id: 3,
-        image: "/images/hero-image-3.jpg",
-        alt: "hero image 3",
-    },
-    {
-        id: 4,
-        image: "/images/hero-image-4.jpg",
-        alt: "hero image 4",
-    },
-    {
-        id: 5,
-        image: "/images/hero-image-5.jpg",
-        alt: "hero image 5",
-    },
+const images = [
+  {
+    id: 1,
+    image: "/images/hero-image-1.jpg",
+  },
+  {
+    id: 2,
+    image: "/images/hero-image-2.jpg",
+  },
+  {
+    id: 3,
+    image: "/images/hero-image-3.jpg",
+  },
+  {
+    id: 4,
+    image: "/images/hero-image-4.jpg",
+  },
+  {
+    id: 5,
+    image: "/images/hero-image-5.jpg",
+  },
 ];
+
+export const hero_data = {
+  vi: {
+    aria_label: "Trình chiếu hình ảnh dự án",
+    slides: images.map((image, index) => ({
+      ...image,
+      alt: `Hình ảnh dự án ${index + 1}`,
+    })),
+  },
+  en: {
+    aria_label: "Project image carousel",
+    slides: images.map((image, index) => ({
+      ...image,
+      alt: `Project image ${index + 1}`,
+    })),
+  },
+};

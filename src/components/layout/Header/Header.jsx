@@ -5,7 +5,8 @@ import Link from "next/link";
 import { header_data } from "@/data/header.data";
 
 export default function Header({ locale }) {
-    const { top_header, main_header } = header_data;
+    const content = header_data[locale] ?? header_data.vi;
+    const { home_label, menu_label, top_header, main_header } = content;
     const is_english = locale === "en";
     const current_language = is_english
         ? { name: "English", icon: "/images/language/en.svg", href: "/en" }
@@ -83,7 +84,7 @@ export default function Header({ locale }) {
                         {render_categories(main_header.left)}
                     </div>
                     <div className={style.main_header_center}>
-                        <Link href={`/${locale}`} aria-label="Polaris - Trang chủ">
+                        <Link href={`/${locale}`} aria-label={home_label}>
                             <Image
                                 src="/images/logo.svg"
                                 alt="Polaris"
@@ -99,7 +100,7 @@ export default function Header({ locale }) {
                     <button
                         className={style.main_header_menu}
                         type="button"
-                        aria-label="Mở menu chính"
+                        aria-label={menu_label}
                     >
                         <Image
                             src="/icons/hamburger-menu.svg"

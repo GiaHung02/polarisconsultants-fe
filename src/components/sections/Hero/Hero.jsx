@@ -13,13 +13,13 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import styles from "./Hero.module.scss";
 
-export default function Hero({ slides }) {
+export default function Hero({ aria_label, slides }) {
   if (!slides?.length) {
     return null;
   }
 
   return (
-    <section className={styles.hero} aria-label="Hero carousel">
+    <section className={styles.hero} aria-label={aria_label}>
       <Swiper
         className={styles.slider}
         modules={[A11y, Autoplay, EffectFade, Pagination]}
