@@ -39,6 +39,12 @@
                 .language_selector {
                     position: relative;
 
+                    .language_link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
                     &:hover,
                     &:focus-within {
                         .language_list {

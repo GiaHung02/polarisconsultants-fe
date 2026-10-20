@@ -7,6 +7,12 @@ import { header_data } from "@/data/header.data";
 export default function Header({ locale }) {
     const { top_header, main_header } = header_data;
     const is_english = locale === "en";
+    const current_language = is_english
+        ? { name: "English", icon: "/images/language/en.svg", href: "/en" }
+        : { name: "Tiếng Việt", icon: "/images/language/vn.svg", href: "/vi" };
+    const alternative_language = is_english
+        ? { name: "Tiếng Việt", icon: "/images/language/vn.svg", href: "/vi" }
+        : { name: "English", icon: "/images/language/en.svg", href: "/en" };
     const render_categories = (categories) =>
         categories.map((category) => (
             <div className={style.main_header_category} key={category.id}>
@@ -36,13 +42,33 @@ export default function Header({ locale }) {
                             </Link>
                         ))}
                         <div className={style.language_selector}>
-                            <Link href={is_english ? "/en" : "/vi"}>
-                                {is_english ? "EN" : "VN"}
+                            <Link
+                                className={style.language_link}
+                                href={current_language.href}
+                                aria-label={current_language.name}
+                            >
+                                <Image
+                                    src={current_language.icon}
+                                    alt=""
+                                    width={24}
+                                    height={24}
+                                    unoptimized
+                                />
                             </Link>
                             <ul className={style.language_list}>
                                 <li>
-                                    <Link href={is_english ? "/vi" : "/en"}>
-                                        {is_english ? "VN" : "EN"}
+                                    <Link
+                                        className={style.language_link}
+                                        href={alternative_language.href}
+                                        aria-label={alternative_language.name}
+                                    >
+                                        <Image
+                                            src={alternative_language.icon}
+                                            alt=""
+                                            width={24}
+                                            height={24}
+                                            unoptimized
+                                        />
                                     </Link>
                                 </li>
                             </ul>
