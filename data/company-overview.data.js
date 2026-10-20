@@ -12,26 +12,26 @@ export const company_overview_data = {
     {
       id: "in-progress",
       icon: "",
-      value: "45",
+      value: "5",
       label: "Dự án đang thực hiện",
     },
     {
       id: "completed",
       icon: "",
-      value: "180",
+      value: "2",
       label: "Dự án đã hoàn thành",
     },
     {
       id: "employees",
       icon: "",
-      value: "1000",
+      value: "12",
       label: "Nhân sự",
     },
     {
-      id: "revenue",
+      id: "customer",
       icon: "",
-      value: "9.042",
-      label: "Doanh thu 2025 (tỷ đồng)",
+      value: "2",
+      label: "Khách hàng hài lòng",
     },
   ],
 };

@@ -73,6 +73,6 @@ body {
 
 }
 
-section[id] {
-  scroll-margin-top: 140px;
+section {
+  margin-block: var(--spacing-5xl);
 }

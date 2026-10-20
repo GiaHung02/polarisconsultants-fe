@@ -1,7 +1,6 @@
 @use "@/styles/index.scss" as *;
 
 .company_overview {
-  padding-block: var(--spacing-5xl);
   color: var(--color-primary);
   background-color: var(--color-white);
 }
@@ -17,7 +16,7 @@
   grid-column: 1 / -1;
   margin-bottom: var(--spacing-md);
   color: var(--color-accent-2);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.08em;
   line-height: var(--line-height-normal);
@@ -26,25 +25,23 @@
 
 .title {
   max-width: 720px;
-  font-size: clamp(var(--font-size-4xl), 4vw, var(--font-size-6xl));
+  font-size: clamp(var(--font-size-3xl), 4vw, var(--font-size-5xl));
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   text-transform: uppercase;
 }
 
 .description {
-  max-width: 680px;
-  color: var(--color-black);
-  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-body-text);
 }
 
 .stats {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-top: var(--spacing-3xl);
-  padding: var(--spacing-2xl) 0 0;
-  border-top: 1px solid rgb(18 38 75 / 18%);
+  margin-top: var(--spacing-5xl);
   list-style: none;
 }
 
@@ -53,7 +50,7 @@
   grid-template-rows: 56px auto auto;
   align-content: start;
   padding-inline: var(--spacing-lg);
-  border-left: 1px solid rgb(18 38 75 / 18%);
+  justify-items: center;
 
   &:first-child {
     padding-left: 0;
@@ -68,24 +65,19 @@
 }
 
 .value {
-  margin-top: var(--spacing-lg);
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-5xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
 }
 
 .label {
   margin-top: var(--spacing-sm);
-  color: var(--color-black);
-  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
   line-height: var(--line-height-normal);
 }
 
 @include respond-tablet() {
-  .company_overview {
-    padding-block: var(--spacing-4xl);
-  }
-
   .intro {
     grid-template-columns: 1fr;
     row-gap: var(--spacing-lg);
@@ -107,10 +99,6 @@
 }
 
 @include respond-mobile() {
-  .company_overview {
-    padding-block: var(--spacing-3xl);
-  }
-
   .title {
     font-size: var(--font-size-3xl);
   }
