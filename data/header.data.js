@@ -8,11 +8,6 @@ export const header_data = {
                 name: "Tuyển Dụng",
                 slug: "#",
             },
-            {
-                id: 2,
-                name: "Liên Hệ",
-                slug: "#",
-            },
         ],
     },
     main_header: {
@@ -118,6 +113,12 @@ export const header_data = {
                         slug: "#",
                     },
                 ],
+            },
+            {
+                id: 6,
+                name: "Liên Hệ",
+                slug: "#",
+                subcategories: [],
             },
         ],
     },
