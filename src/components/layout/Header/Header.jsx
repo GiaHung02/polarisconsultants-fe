@@ -57,13 +57,15 @@ export default function Header({ locale }) {
                         {render_categories(main_header.left)}
                     </div>
                     <div className={style.main_header_center}>
-                        <Image
-                            src="/icons/temporary-logo.svg"
-                            alt="Polaris"
-                            width={157}
-                            height={48}
-                            priority
-                        />
+                        <Link href={`/${locale}`} aria-label="Polaris - Trang chủ">
+                            <Image
+                                src="/images/logo.svg"
+                                alt="Polaris"
+                                width={157}
+                                height={48}
+                                priority
+                            />
+                        </Link>
                     </div>
                     <div className={style.main_header_right}>
                         {render_categories(main_header.right)}
