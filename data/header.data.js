@@ -17,7 +17,7 @@ export const header_data = {
         left: [
             {
                 id: 1,
-                name: "Lĩnh Vực Kinh Doanh",
+                name: "Lĩnh Vực Hoạt Động",
                 slug: "#",
                 subcategories: [
                     {
@@ -144,7 +144,7 @@ export const header_data = {
       left: [
         {
           id: 1,
-          name: "Business Sectors",
+          name: "Services",
           slug: "#",
           subcategories: [
             {

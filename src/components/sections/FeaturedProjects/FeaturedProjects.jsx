@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useId } from "react";
-import { A11y, Navigation } from "swiper/modules";
+import { A11y, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -63,10 +63,20 @@ export default function FeaturedProjects({ projects }) {
 
         <Swiper
           className={styles.slider}
-          modules={[A11y, Navigation]}
+          modules={[A11y, Autoplay, Navigation]}
           slidesPerView={1.15}
           slidesPerGroup={1}
           spaceBetween={16}
+          loop={has_desktop_overflow}
+          autoplay={
+            has_desktop_overflow
+              ? {
+                  delay: 3500,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }
+              : false
+          }
           navigation={has_desktop_overflow}
           watchOverflow
           breakpoints={{
