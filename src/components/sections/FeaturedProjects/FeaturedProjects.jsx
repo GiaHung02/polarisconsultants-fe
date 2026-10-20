@@ -55,7 +55,7 @@ export default function FeaturedProjects({ projects }) {
   const has_desktop_overflow = items.length > MAX_VISIBLE_PROJECTS;
 
   return (
-    <section className={styles.featured_projects} aria-labelledby={title_id}>
+    <section id="featured-projects" className={styles.featured_projects} aria-labelledby={title_id}>
       <div className="container">
         <h2 className={styles.title} id={title_id}>
           {title}

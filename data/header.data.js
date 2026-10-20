@@ -109,8 +109,8 @@ export const header_data = {
                 subcategories: [
                     {
                         id: 51,
-                        name: "Dự Án Tiêu Biểu",
-                        slug: "#",
+                        name: "Dự Án Nổi Bật",
+                        slug: "#featured-projects",
                     },
                     {
                         id: 52,
