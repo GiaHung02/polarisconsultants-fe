@@ -46,6 +46,7 @@ export default function CompanyOverview({ content }) {
                   end={Number(stat.value)}
                   duration={2}
                   enableScrollSpy={true}
+                  scrollSpyOnce={true}
                   useGrouping={false}
                 >
                   {({ countUpRef, start }) => (
