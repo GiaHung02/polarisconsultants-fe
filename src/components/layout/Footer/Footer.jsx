@@ -57,10 +57,10 @@ export default function Footer({ locale = "vi" }) {
           </div>
 
           <div className={styles.contact}>
-            <p>{content.contact1}</p>
-            <p>{content.contact2}</p>
             <p>{content.phone_number}</p>
             <p>{content.email_address}</p>
+            <p>{content.contact1}</p>
+            <p>{content.contact2}</p>
           </div>
         </div>
 
