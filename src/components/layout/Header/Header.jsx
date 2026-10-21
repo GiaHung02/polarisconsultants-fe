@@ -19,6 +19,7 @@ export default function Header({ locale }) {
     const mobile_navigation_label = is_english
         ? "Main navigation"
         : "Điều hướng chính";
+    const language_label = is_english ? "Language" : "Ngôn ngữ";
     const all_categories = [...main_header.left, ...main_header.right];
     const current_language = is_english
         ? { name: "English", icon: "/images/language/en.svg", href: "/en" }
@@ -225,7 +226,10 @@ export default function Header({ locale }) {
                     </button>
                 </div>
 
-                <nav aria-label={mobile_navigation_label}>
+                <nav
+                    className={style.mobile_menu_navigation}
+                    aria-label={mobile_navigation_label}
+                >
                     <ul className={style.mobile_navigation_list}>
                         {all_categories.map((category) => {
                             const has_subcategories = category.subcategories.length > 0;
@@ -293,6 +297,34 @@ export default function Header({ locale }) {
                         })}
                     </ul>
                 </nav>
+
+                <div className={style.mobile_language_selector}>
+                    <span className={style.mobile_language_label}>{language_label}</span>
+                    <div className={style.mobile_language_options}>
+                        {[current_language, alternative_language].map((language, index) => (
+                            <Link
+                                key={language.href}
+                                className={clsx(style.mobile_language_link, {
+                                    [style.is_active]: index === 0,
+                                })}
+                                href={language.href}
+                                aria-label={language.name}
+                                aria-current={index === 0 ? "page" : undefined}
+                                tabIndex={is_mobile_menu_open ? 0 : -1}
+                                onClick={close_mobile_menu}
+                            >
+                                <Image
+                                    src={language.icon}
+                                    alt=""
+                                    width={24}
+                                    height={24}
+                                    unoptimized
+                                />
+                                <span>{language.name}</span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
         </header>
     );
