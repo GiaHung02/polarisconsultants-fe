@@ -11,7 +11,7 @@ const nextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
-  output: "export",
+  // output: "export",
 };
 
 export default withNextIntl(nextConfig);

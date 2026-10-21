@@ -12,10 +12,10 @@ export const footer_data = {
     ],
     services_title: "Lĩnh vực kinh doanh",
     services: ["Tư vấn chiến lược", "Tư vấn thiết kế", "Tư vấn xây dựng"],
-    contact_title: "Cùng Polaris kiến tạo tương lai",
-    contact_description:
-      "Kết nối với chúng tôi để bắt đầu một dự án bền vững và khác biệt.",
-    contact_label: "Liên hệ Polaris",
+    contact1:
+      "Văn phòng trụ sở: 213/7 Thủ Khoa Huân, phường Phú Thủy, tỉnh Lâm Đồng",
+    contact2:
+      "Văn phòng chi nhánh: Tháp Green Topaz, Bcons city, phường Đông Hòa, TP.HCM",
     copyright: "Bảo lưu mọi quyền.",
   },
   en: {
@@ -35,10 +35,10 @@ export const footer_data = {
       "Design consulting",
       "Construction consulting",
     ],
-    contact_title: "Build the future with Polaris",
-    contact_description:
-      "Connect with us to start a sustainable and distinctive project.",
-    contact_label: "Contact Polaris",
+    contact1:
+      "Head office: 213/7 Thu Khoa Huan, Phu Thuy Ward, Lam Dong Province",
+    contact2:
+      "Branch office: Green Topaz Tower, Bcons City, Dong Hoa Ward, Ho Chi Minh City",
     copyright: "All rights reserved.",
   },
 };

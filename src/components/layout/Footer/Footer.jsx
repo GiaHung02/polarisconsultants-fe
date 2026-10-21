@@ -57,11 +57,8 @@ export default function Footer({ locale = "vi" }) {
           </div>
 
           <div className={styles.contact}>
-            <p className={styles.contact_title}>{content.contact_title}</p>
-            <p className={styles.contact_description}>
-              {content.contact_description}
-            </p>
-            <span className={styles.contact_label}>{content.contact_label}</span>
+            <p>{content.contact1}</p>
+            <p>{content.contact2}</p>
           </div>
         </div>
 

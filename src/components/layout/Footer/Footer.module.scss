@@ -21,7 +21,8 @@
 
 .footer_content {
   display: grid;
-  grid-template-columns: minmax(260px, 1.4fr) minmax(140px, 0.7fr) minmax(190px, 0.9fr) minmax(260px, 1fr);
+  // grid-template-columns: minmax(260px, 1.4fr) minmax(140px, 0.7fr) minmax(190px, 0.9fr) minmax(260px, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--spacing-3xl);
 }
 
@@ -46,7 +47,6 @@
 .description {
   max-width: 400px;
   margin-top: var(--spacing-md);
-  color: rgb(255 255 255 / 72%);
   line-height: var(--line-height-body-text);
 }
 
@@ -95,40 +95,17 @@
 
 .pending_link,
 .service_list {
-  color: rgb(255 255 255 / 72%);
+  color: var(--color-white);
 }
 
 .contact {
   align-self: start;
-  padding: var(--spacing-xl);
-  border: 1px solid rgb(255 255 255 / 14%);
-  background: rgb(255 255 255 / 6%);
+
+  p {
+    margin-bottom: var(--spacing-md);
+  }
 }
 
-.contact_title {
-  color: var(--color-accent-1);
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-}
-
-.contact_description {
-  margin-top: var(--spacing-md);
-  color: rgb(255 255 255 / 72%);
-  line-height: var(--line-height-relaxed);
-}
-
-.contact_label {
-  display: inline-block;
-  margin-top: var(--spacing-lg);
-  padding-top: var(--spacing-md);
-  border-top: 1px solid rgb(255 255 255 / 14%);
-  color: var(--color-white);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
 
 .footer_bottom {
   display: flex;
@@ -137,12 +114,11 @@
   margin-top: var(--spacing-4xl);
   padding-top: var(--spacing-lg);
   border-top: 1px solid rgb(255 255 255 / 14%);
-  color: rgb(255 255 255 / 56%);
   font-size: var(--font-size-sm);
 }
 
 .tagline {
-  color: var(--color-accent-1);
+  color: var(--color-white);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -152,10 +128,6 @@
   .footer_content {
     grid-template-columns: minmax(260px, 1.3fr) repeat(2, minmax(160px, 0.7fr));
     gap: var(--spacing-2xl);
-  }
-
-  .contact {
-    grid-column: 1 / -1;
   }
 }
 
@@ -186,10 +158,6 @@
   .brand,
   .contact {
     grid-column: auto;
-  }
-
-  .contact {
-    padding: var(--spacing-lg);
   }
 
   .footer_bottom {
