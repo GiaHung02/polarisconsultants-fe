@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import styles from "./CompanyOverview.module.scss";
+import CountUp from 'react-countup';
 
 export default function CompanyOverview({ content }) {
   if (!content) {
@@ -39,7 +41,16 @@ export default function CompanyOverview({ content }) {
                     height={56}
                   />
                 )}
-                <strong className={styles.value}>{stat.value}</strong>
+                <CountUp
+                  start={0}
+                  end={Number(stat.value)}
+                  duration={2}
+                  enableScrollSpy= {true}
+                >
+                  {({ countUpRef, start }) => (
+                    <strong ref={countUpRef} className={styles.value}>{stat.value}</strong>
+                  )}
+                </CountUp>
                 <span className={styles.label}>{stat.label}</span>
               </li>
             ))}
