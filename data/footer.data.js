@@ -12,10 +12,10 @@ export const footer_data = {
     ],
     services_title: "Lĩnh vực kinh doanh",
     services: ["Tư vấn chiến lược", "Tư vấn thiết kế", "Tư vấn xây dựng"],
-    contact1:
-      "Văn phòng trụ sở: 213/7 Thủ Khoa Huân, phường Phú Thủy, tỉnh Lâm Đồng",
-    contact2:
-      "Văn phòng chi nhánh: Tháp Green Topaz, Bcons city, phường Đông Hòa, TP.HCM",
+    contact1: "Văn phòng trụ sở: 213/7 Thủ Khoa Huân, phường Phú Thủy, tỉnh Lâm Đồng",
+    contact2: "Văn phòng chi nhánh: Tháp Green Topaz, Bcons city, phường Đông Hòa, TP.HCM",
+    phone_number: "Điện thoại: 84 946 728 357",
+    email_address: "Email: contact@polarisconsultants.com.vn",
     copyright: "Bảo lưu mọi quyền.",
   },
   en: {
@@ -35,10 +35,10 @@ export const footer_data = {
       "Design consulting",
       "Construction consulting",
     ],
-    contact1:
-      "Head office: 213/7 Thu Khoa Huan, Phu Thuy Ward, Lam Dong Province",
-    contact2:
-      "Branch office: Green Topaz Tower, Bcons City, Dong Hoa Ward, Ho Chi Minh City",
+    contact1: "Head office: 213/7 Thu Khoa Huan, Phu Thuy Ward, Lam Dong Province",
+    contact2: "Branch office: Green Topaz Tower, Bcons City, Dong Hoa Ward, Ho Chi Minh City",
+    phone_number: "Phone number: 0946 728 357",
+    email_address: "Email: contact@polarisconsultants.com.vn",
     copyright: "All rights reserved.",
   },
 };

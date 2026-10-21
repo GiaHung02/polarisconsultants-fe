@@ -22,7 +22,7 @@
 .footer_content {
   display: grid;
   // grid-template-columns: minmax(260px, 1.4fr) minmax(140px, 0.7fr) minmax(190px, 0.9fr) minmax(260px, 1fr);
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 1fr);
   gap: var(--spacing-3xl);
 }
 
