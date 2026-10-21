@@ -5,6 +5,15 @@
     text-transform: uppercase;
     font-weight: var(--font-weight-bold);
 
+    a {
+        transition: color 0.3s ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+        color: var(--color-accent-2);
+    }
+
     .top_header {
         background-color: var(--color-primary);
 
@@ -178,7 +187,7 @@
     @include respond-desktoplarge() {
         .top_header {
             .top_header_container {
-                font-size: var(--font-size-xs);
+                font-size: var(--font-size-sm);
 
                 .top_header_right {
                     gap: var(--spacing-lg);
@@ -189,7 +198,7 @@
         .main_header {
             .main_header_container {
                 column-gap: var(--spacing-md);
-                font-size: var(--font-size-sm);
+                font-size: var(--font-size-md);
 
                 .main_header_left,
                 .main_header_right {
