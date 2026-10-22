@@ -25,7 +25,7 @@ export const company_overview_data = {
       {
         id: "employees",
         icon: "",
-        value: "12",
+        value: "20",
         label: "Nhân sự",
       },
       {
