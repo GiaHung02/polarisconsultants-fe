@@ -1,7 +1,7 @@
 export const company_overview_data = {
   vi: {
     eyebrow: "Công ty TNHH tư vấn thiết kế xây dựng Polaris",
-    title: "Nhà thầu xây dựng uy tín hàng đầu Việt Nam",
+    title: "Hoạt động trong lĩnh vực Thiết kế Dân dụng, Công nghiệp, Cơ điện và Nội - Ngoại thất",
     description:
       "Trên cơ sở nội lực vững vàng, tầm nhìn của Polaris là trở thành biểu tượng của ngành xây dựng Việt Nam, từng bước vươn tầm Quốc tế.",
     stats: [
@@ -64,7 +64,7 @@ export const company_overview_data = {
       {
         id: "employees",
         icon: "",
-        value: "12",
+        value: "20",
         label: "Employees",
       },
       {

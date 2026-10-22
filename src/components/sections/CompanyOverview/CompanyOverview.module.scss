@@ -6,17 +6,17 @@
 }
 
 .intro {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  column-gap: var(--spacing-3xl);
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .eyebrow {
   grid-column: 1 / -1;
   margin-bottom: var(--spacing-md);
   color: var(--color-accent-2);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.08em;
   line-height: var(--line-height-normal);
@@ -24,11 +24,12 @@
 }
 
 .title {
-  max-width: 720px;
   font-size: clamp(var(--font-size-3xl), 4vw, var(--font-size-5xl));
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .description {
