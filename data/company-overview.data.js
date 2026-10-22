@@ -2,8 +2,7 @@ export const company_overview_data = {
   vi: {
     eyebrow: "Công ty TNHH tư vấn thiết kế xây dựng Polaris",
     title: "Hoạt động trong lĩnh vực Thiết kế Dân dụng, Công nghiệp, Cơ điện và Nội - Ngoại thất",
-    description:
-      "Trên cơ sở nội lực vững vàng, tầm nhìn của Polaris là trở thành biểu tượng của ngành xây dựng Việt Nam, từng bước vươn tầm Quốc tế.",
+    description: "Tiên phong bằng giải pháp và công nghệ, Polaris khát vọng định hình tương lai ngành xây dựng Việt Nam, đồng thời đưa trí tuệ Việt vươn xa trên trường quốc tế",
     stats: [
       {
         id: "founded",
