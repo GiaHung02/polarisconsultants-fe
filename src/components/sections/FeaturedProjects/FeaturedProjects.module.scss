@@ -1,5 +1,9 @@
 @use "@/styles/index.scss" as *;
 
+.featured_projects {
+  overflow-x: hidden;
+}
+
 .title {
   margin-bottom: var(--spacing-2xl);
   color: var(--color-primary);
