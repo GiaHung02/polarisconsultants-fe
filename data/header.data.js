@@ -100,37 +100,43 @@ export const header_data = {
     main_header: {
       left: [
         {
-          id: 1,
-          name: "Services",
-          slug: "#",
-          subcategories: [
-            {
-              id: 11,
-              name: "Strategic Consulting",
-              slug: "#",
-            },
-            {
-              id: 12,
-              name: "Design Consulting",
-              slug: "#",
-            },
-            {
-              id: 13,
-              name: "Construction Consulting",
-              slug: "#",
-            },
-          ],
-        },
-        {
           id: 2,
           name: "Introduction",
           slug: "/en/introduction",
           subcategories: [],
         },
+        {
+          id: 3,
+          name: "Areas of Operation",
+          slug: "#",
+          subcategories: [
+            {
+              id: 11,
+              name: "Design Consulting",
+              slug: "#",
+            },
+            {
+              id: 12,
+              name: "Design Appraisal",
+              slug: "#",
+            },
+            {
+              id: 13,
+              name: "Management Consulting",
+              slug: "#",
+            },
+          ],
+        },
+        {
+          id: 4,
+          name: "News",
+          slug: "",
+          subcategories: [],
+        },
       ],
       right: [
         {
-          id: 5,
+          id: 6,
           name: "Projects",
           slug: "#",
           subcategories: [
@@ -147,8 +153,14 @@ export const header_data = {
           ],
         },
         {
-          id: 6,
+          id: 7,
           name: "Contact",
+          slug: "#",
+          subcategories: [],
+        },
+        {
+          id: 8,
+          name: "Team",
           slug: "#",
           subcategories: [],
         },
