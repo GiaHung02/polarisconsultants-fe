@@ -27,7 +27,7 @@ export const introduction_data = {
         {
           id: "branch-office",
           label: "Văn phòng Chi nhánh",
-          value: "Tháp Green Topaz, phân khu Bcons city",
+          value: "Tháp Green Topaz, phân khu Bcons city, TP.HCM",
         },
         {
           id: "operations-team",
