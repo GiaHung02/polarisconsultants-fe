@@ -43,6 +43,10 @@ export default async function IntroductionPage({ params }) {
           {content.sections.map((section) => {
             const List = section.ordered ? "ol" : "ul";
             const section_title_id = `${section.id}-title`;
+            const section_title = section.title.replace(
+              /^[^\p{L}\p{N}]+/u,
+              "",
+            );
 
             return (
               <section
@@ -51,13 +55,9 @@ export default async function IntroductionPage({ params }) {
                 aria-labelledby={section_title_id}
               >
                 <h2 className={style.section_title} id={section_title_id}>
-                  {section.title}
+                  {section_title}
                 </h2>
-                <List
-                  className={clsx(style.item_list, {
-                    [style.ordered_list]: section.ordered,
-                  })}
-                >
+                <List className={style.item_list}>
                   {section.items.map((item) => (
                     <li className={style.item} key={item.id}>
                       <strong>{item.title}</strong>

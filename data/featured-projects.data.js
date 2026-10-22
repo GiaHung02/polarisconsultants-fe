@@ -26,7 +26,7 @@ export const featured_projects_data = {
       },
       {
         id: 4,
-        image: "/images/hero-image-4.jpg",
+        image: "/images/featured-projects/project-4.jpg",
         alt: "Dự án nổi bật 04",
         category: "Dự án",
         title: "Dự án 04",

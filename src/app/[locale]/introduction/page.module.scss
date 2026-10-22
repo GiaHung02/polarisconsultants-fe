@@ -35,7 +35,7 @@
 
 .welcome {
   margin: var(--spacing-lg) auto 0;
-  font-size: clamp(var(--font-size-4xl), 5vw, var(--font-size-6xl));
+  font-size: var(--font-size-5xl);
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-tight);
   letter-spacing: -0.035em;
@@ -43,11 +43,11 @@
 
 .introductory_copy {
   margin: var(--spacing-2xl) auto 0;
-  color: rgb(18 38 75 / 82%);
-  text-align: left;
+  color: var(--color-primary);
+  text-align: justify;
 
   p {
-    font-size: clamp(var(--font-size-xl), 1.5vw, var(--font-size-2xl));
+    font-size: var(--font-size-xl);
     line-height: var(--line-height-body-text);
   }
 
@@ -105,43 +105,39 @@
 }
 
 .section_list {
-  display: grid;
-  gap: var(--spacing-xl);
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-5xl);
 }
 
 .content_section {
   margin: 0;
-  padding: var(--spacing-2xl);
-  background-color: var(--color-white);
-  border: 1px solid rgb(18 38 75 / 12%);
-  border-radius: var(--border-radius-xl);
-  box-shadow: 0 16px 45px rgb(18 38 75 / 7%);
+
+  & + & {
+    margin-top: var(--spacing-4xl);
+  }
 }
 
 .section_title {
+  padding-bottom: var(--spacing-md);
   color: var(--color-primary);
-  font-size: clamp(var(--font-size-2xl), 3vw, var(--font-size-3xl));
-  font-weight: var(--font-weight-heavy);
-  line-height: var(--line-height-tight);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-normal);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid rgb(18 38 75 / 18%);
 }
 
 .item_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
 }
 
 .item {
-  position: relative;
-  padding: var(--spacing-lg);
-  color: rgb(18 38 75 / 82%);
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-relaxed);
-  background-color: rgb(18 38 75 / 4%);
-  border-left: 4px solid var(--color-accent-2);
-  border-radius: var(--border-radius-md);
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-body-text);
+
+  & + & {
+    margin-top: var(--spacing-2xl);
+  }
 
   strong,
   span {
@@ -149,36 +145,15 @@
   }
 
   strong {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     color: var(--color-primary);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-normal);
+    line-height: var(--line-height-body-text);
   }
-}
 
-.ordered_list {
-  counter-reset: service;
-
-  .item {
-    padding-top: 72px;
-    counter-increment: service;
-
-    &::before {
-      position: absolute;
-      top: var(--spacing-lg);
-      left: var(--spacing-lg);
-      display: grid;
-      width: 36px;
-      height: 36px;
-      place-items: center;
-      color: var(--color-white);
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-bold);
-      content: counter(service, decimal-leading-zero);
-      background-color: var(--color-accent-2);
-      border-radius: var(--border-radius-full);
-    }
+  span {
+    text-align: justify;
   }
 }
 
@@ -187,8 +162,7 @@
     padding-block: var(--spacing-4xl);
   }
 
-  .company,
-  .content_section {
+  .company {
     padding: var(--spacing-xl);
   }
 
@@ -228,36 +202,20 @@
     margin-top: var(--spacing-3xl);
   }
 
-  .company,
-  .content_section {
+  .company {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
   }
 
-  .company_title,
-  .section_title {
+  .company_title {
     font-size: var(--font-size-2xl);
   }
 
-  .item_list {
-    grid-template-columns: 1fr;
+  .section_list {
+    margin-top: var(--spacing-4xl);
   }
 
-  .item {
-    padding: var(--spacing-md);
-    font-size: var(--font-size-base);
-
-    strong {
-      font-size: var(--font-size-lg);
-    }
-  }
-
-  .ordered_list .item {
-    padding-top: 64px;
-
-    &::before {
-      top: var(--spacing-md);
-      left: var(--spacing-md);
-    }
+  .content_section + .content_section {
+    margin-top: var(--spacing-3xl);
   }
 }

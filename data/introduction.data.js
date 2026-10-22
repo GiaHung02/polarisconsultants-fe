@@ -96,24 +96,24 @@ export const introduction_data = {
       },
       {
         id: "core-values",
-        title: "💎 GÍA TRỊ CỐT LÕI",
+        title: "💎 GIÁ TRỊ CỐT LÕI",
         ordered: false,
         items: [
           {
             id: "transparency",
-            title: "Minh bạch (Transparency)",
+            title: "Minh bạch",
             description:
               "Rõ ràng trong giải pháp, chuẩn xác trong dự toán và trung thực trong cam kết.",
           },
           {
             id: "professionalism",
-            title: "Chuyên nghiệp (Professionalism)",
+            title: "Chuyên nghiệp",
             description:
               "Tuân thủ nghiêm ngặt các tiêu chuẩn xây dựng và tiến độ đề ra.",
           },
           {
             id: "sustainability",
-            title: "Bền vững (Sustainability)",
+            title: "Bền vững",
             description:
               "Đặt độ an toàn, độ bền công trình và kiến trúc xanh làm trọng tâm phát triển.",
           },
