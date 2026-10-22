@@ -5,21 +5,21 @@ export const featured_projects_data = {
     items: [
       {
         id: 1,
-        image: "/images/hero-image-1.jpg",
+        image: "/images/featured-projects/project-1.jpg",
         alt: "Dự án nổi bật 01",
         category: "Dự án",
         title: "Dự án 01",
       },
       {
         id: 2,
-        image: "/images/hero-image-2.jpg",
+        image: "/images/featured-projects/project-2.jpg",
         alt: "Dự án nổi bật 02",
         category: "Dự án",
         title: "Dự án 02",
       },
       {
         id: 3,
-        image: "/images/hero-image-3.jpg",
+        image: "/images/featured-projects/project-3.jpg",
         alt: "Dự án nổi bật 03",
         category: "Dự án",
         title: "Dự án 03",
