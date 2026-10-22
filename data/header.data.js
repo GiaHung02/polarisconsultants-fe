@@ -40,7 +40,7 @@ export const header_data = {
         {
           id: 4,
           name: "Giới Thiệu",
-          slug: "#",
+          slug: "/vi/introduction",
           subcategories: [],
         },
       ],
@@ -111,67 +111,12 @@ export const header_data = {
         },
         {
           id: 2,
-          name: "News",
-          slug: "#",
-          subcategories: [
-            {
-              id: 21,
-              name: "Company News",
-              slug: "#",
-            },
-            {
-              id: 22,
-              name: "Market News",
-              slug: "#",
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "Sustainable Development",
-          slug: "#",
-          subcategories: [
-            {
-              id: 31,
-              name: "Environment",
-              slug: "#",
-            },
-            {
-              id: 32,
-              name: "Social",
-              slug: "#",
-            },
-            {
-              id: 33,
-              name: "Governance",
-              slug: "#",
-            },
-          ],
+          name: "Introduction",
+          slug: "/en/introduction",
+          subcategories: [],
         },
       ],
       right: [
-        {
-          id: 4,
-          name: "About Us",
-          slug: "#",
-          subcategories: [
-            {
-              id: 41,
-              name: "About Polaris",
-              slug: "#",
-            },
-            {
-              id: 42,
-              name: "Vision & Mission",
-              slug: "#",
-            },
-            {
-              id: 43,
-              name: "Our Team",
-              slug: "#",
-            },
-          ],
-        },
         {
           id: 5,
           name: "Projects",
