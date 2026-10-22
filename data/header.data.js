@@ -16,7 +16,13 @@ export const header_data = {
     main_header: {
       left: [
         {
-          id: 1,
+          id: 2,
+          name: "Giới Thiệu",
+          slug: "/vi/introduction",
+          subcategories: [],
+        },
+        {
+          id: 3,
           name: "Lĩnh Vực Hoạt Động",
           slug: "#",
           subcategories: [
@@ -39,14 +45,14 @@ export const header_data = {
         },
         {
           id: 4,
-          name: "Giới Thiệu",
-          slug: "/vi/introduction",
+          name: "Tin tức",
+          slug: "",
           subcategories: [],
         },
       ],
       right: [
         {
-          id: 5,
+          id: 6,
           name: "Dự Án",
           slug: "#",
           subcategories: [
@@ -63,8 +69,14 @@ export const header_data = {
           ],
         },
         {
-          id: 6,
+          id: 7,
           name: "Liên Hệ",
+          slug: "#",
+          subcategories: [],
+        },
+        {
+          id: 8,
+          name: "Đội Ngũ",
           slug: "#",
           subcategories: [],
         },
