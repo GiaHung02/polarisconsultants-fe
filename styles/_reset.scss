@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Prevents long URLs or unbreakable strings from blowing out their container. */
 p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 /* Smarter line-breaking:
