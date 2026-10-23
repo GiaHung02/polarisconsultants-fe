@@ -110,6 +110,20 @@
         }
       }
 
+      input {
+        &:autofill {
+          background-color: transparent;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+          -webkit-text-fill-color: var(--color-primary);
+          -webkit-box-shadow: 0 0 0 1000px var(--color-white) inset;
+          caret-color: var(--color-primary);
+        }
+      }
+
       textarea {
         padding-inline: var(--spacing-md);
         border: 2px solid var(--color-primary);
