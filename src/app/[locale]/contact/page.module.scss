@@ -170,13 +170,120 @@
 
 @include respond-tabletMedium() {
   .contact {
+    .contact_container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--spacing-2xl);
+      margin-block: var(--spacing-2xl);
+
+      .information,
+      .logo {
+        width: 100%;
+      }
+
+      .information {
+        .title {
+          font-size: var(--font-size-xl);
+        }
+
+        div {
+          p {
+            font-size: var(--font-size-lg);
+            line-height: var(--line-height-relaxed);
+            overflow-wrap: anywhere;
+          }
+        }
+      }
+
+      .logo {
+        .logo_container {
+          max-width: 360px;
+        }
+      }
+    }
+
     .form_section {
+      margin-block: var(--spacing-4xl);
+
+      .form_title {
+        margin-bottom: var(--spacing-xl);
+        font-size: var(--font-size-3xl);
+      }
+
       .contact_form {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
       }
 
       .message_field {
         grid-column: auto;
+        margin-top: var(--spacing-xs);
+      }
+    }
+  }
+}
+
+@include respond-mobile() {
+  .contact {
+    .contact_container {
+      gap: var(--spacing-xl);
+      margin-block: var(--spacing-xl);
+
+      .information {
+        .title {
+          font-size: var(--font-size-lg);
+        }
+
+        div {
+          p {
+            font-size: var(--font-size-base);
+          }
+        }
+      }
+
+      .logo {
+        .logo_container {
+          max-width: 260px;
+        }
+      }
+    }
+
+    .form_section {
+      margin-block: var(--spacing-3xl);
+
+      .form_title {
+        margin-bottom: var(--spacing-lg);
+        font-size: var(--font-size-2xl);
+      }
+
+      .contact_form {
+        gap: var(--spacing-md);
+      }
+
+      .form_field {
+        label,
+        input,
+        textarea {
+          font-size: var(--font-size-base);
+        }
+
+        textarea {
+          min-height: 140px;
+        }
+      }
+
+      .message_field {
+        margin-top: var(--spacing-xs);
+
+        label {
+          font-size: var(--font-size-base);
+        }
+      }
+
+      .submit_button {
+        width: 100%;
+        justify-self: stretch;
+        font-size: var(--font-size-base);
       }
     }
   }
