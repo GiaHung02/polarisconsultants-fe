@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { contact_data } from "@/data/contact.data";
 import style from "./page.module.scss";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 export default async function ContactPage({ params }) {
   const { locale } = await params;
@@ -31,6 +32,11 @@ export default async function ContactPage({ params }) {
           </div>
         </div>
       </div>
+
+      <ContactForm
+        title={content.form_title}
+        unavailableMessage={content.form_unavailable_message}
+      />
     </article>
   );
 }

@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Polaris",
+  title: "Polaris Consultants",
   icons: {
     icon: "/images/favicon.svg",
   },
