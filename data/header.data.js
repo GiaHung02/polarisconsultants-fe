@@ -71,7 +71,7 @@ export const header_data = {
         {
           id: 7,
           name: "Liên Hệ",
-          slug: "#",
+          slug: "/vi/contact",
           subcategories: [],
         },
         {
@@ -155,7 +155,7 @@ export const header_data = {
         {
           id: 7,
           name: "Contact",
-          slug: "#",
+          slug: "/en/contact",
           subcategories: [],
         },
         {

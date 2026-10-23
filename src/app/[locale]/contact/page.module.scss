@@ -1,0 +1,56 @@
+@use "@/styles/index.scss" as *;
+
+
+.contact {
+
+  .contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: var(--spacing-3xl);
+
+    .information {
+      width: 50%;
+
+      .title {
+        color: var(--color-accent-2);
+        font-size: 1.2vw;
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-tight);
+        margin-bottom: var(--spacing-md);
+        text-transform: uppercase;
+      }
+
+      div {
+        p {
+          font-size: var(--font-size-xl);
+          margin-bottom: var(--font-size-xs);
+          color: var(--color-primary);
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .logo {
+      position: relative;
+      width: 50%;
+
+      .logo_container {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        justify-self: center;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
