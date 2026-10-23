@@ -24,6 +24,8 @@ export default async function ContactPage({ params }) {
             <div dangerouslySetInnerHTML={{ __html: content.phone_number }}></div>
             <div dangerouslySetInnerHTML={{ __html: content.email_address }}></div>
             <div dangerouslySetInnerHTML={{ __html: content.website }}></div>
+            <div><p><strong>Phó Giám Đốc: </strong>Lê Thiện Nhân</p></div>
+            <div><p><strong>SĐT: </strong>0941811879</p></div>
           </div>
           <div className={style.logo}>
             <div className={style.logo_container}>
