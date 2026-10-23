@@ -14,7 +14,7 @@
 
       .title {
         color: var(--color-accent-2);
-        font-size: 1.2vw;
+        font-size: clamp(var(--font-size-lg), 1.2vw, var(--font-size-xl));
         font-weight: var(--font-weight-bold);
         line-height: var(--line-height-tight);
         margin-bottom: var(--spacing-md);
