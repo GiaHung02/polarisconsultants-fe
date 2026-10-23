@@ -11,7 +11,7 @@ export const introduction_data = {
       facts: [
         {
           id: "representative",
-          label: "Người đại diện theo pháp luật",
+          label: "Đại diện theo pháp luật",
           value: "Bạch Quốc Khánh",
         },
         {
