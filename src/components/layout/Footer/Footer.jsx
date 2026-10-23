@@ -57,10 +57,10 @@ export default function Footer({ locale = "vi" }) {
           </div>
 
           <div className={styles.contact}>
-            <p>{content.phone_number}</p>
-            <p>{content.email_address}</p>
-            <p>{content.contact1}</p>
-            <p>{content.contact2}</p>
+            <div dangerouslySetInnerHTML={{__html: content.phone_number}}></div>
+            <div dangerouslySetInnerHTML={{__html: content.email_address}}></div>
+            <div dangerouslySetInnerHTML={{__html: content.contact1}}></div>
+            <div dangerouslySetInnerHTML={{__html: content.contact2}}></div>
           </div>
         </div>
 

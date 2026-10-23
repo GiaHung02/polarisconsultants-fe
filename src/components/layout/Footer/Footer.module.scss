@@ -101,8 +101,14 @@
 .contact {
   align-self: start;
 
-  p {
-    margin-bottom: var(--spacing-md);
+  div {
+    p {
+      margin-bottom: var(--spacing-md);
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
