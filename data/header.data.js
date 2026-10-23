@@ -107,7 +107,7 @@ export const header_data = {
         },
         {
           id: 3,
-          name: "Areas of Operation",
+          name: "Service",
           slug: "#",
           subcategories: [
             {
