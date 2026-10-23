@@ -1,7 +1,7 @@
 export const introduction_data = {
   vi: {
     title: "GIỚI THIỆU",
-    welcome: "Chào mừng Quý khách hàng và Quý đối tác đến với POLARIS CONSULTANTS!",
+    welcome: "Chào mừng Quý khách hàng và Quý đối tác đến với POLARIS!",
     introductory_paragraphs: [
       "Lấy cảm hứng từ Polaris – Sao Bắc Đẩu, ngôi sao định hướng sáng nhất trên bầu trời, POLARIS CONSULTANTS được thành lập với định hướng trở thành “kim chỉ nam” uy tín, dẫn dắt các giải pháp tư vấn, thiết kế kiến trúc và kết cấu xây dựng tối ưu cho mọi công trình.",
       "Chúng tôi hiểu rằng mỗi công trình không chỉ là một không gian vật lý, mà còn là nền tảng cho sự phát triển lâu dài và an cư bền vững. Với đội ngũ kỹ sư, kiến trúc sư tâm huyết, am hiểu tiêu chuẩn kỹ thuật chuyên sâu cùng tư duy thiết kế hiện đại, POLARIS CONSULTANTS cam kết mang đến những giải pháp kiến trúc sáng tạo, kết cấu kiên cố và tối ưu hóa chi phí cho chủ đầu tư.",
@@ -10,9 +10,9 @@ export const introduction_data = {
       title: "Công ty TNHH Tư vấn Thiết kế Xây dựng Polaris",
       facts: [
         {
-          id: "establishment-date",
-          label: "Ngày thành lập",
-          value: "21/10/2026",
+          id: "representative",
+          label: "Người đại diện theo pháp luật",
+          value: "Bạch Quốc Khánh",
         },
         {
           id: "enterprise-number",
@@ -33,7 +33,12 @@ export const introduction_data = {
           id: "operations-team",
           label: "Đội ngũ vận hành",
           value:
-            "Kiến trúc sư, Kỹ sư Xây dựng, Kỹ sư Kết cấu, Kỹ sư Điện, Kỹ sư Cấp thoát nước và Điều hòa không khí.",
+            "Kiến trúc sư, Kỹ sư Xây dựng, Kỹ sư Kết cấu, Kỹ sư MEP",
+        },
+        {
+          id: "establishment-date",
+          label: "Ngày thành lập",
+          value: "21/10/2026",
         },
       ],
     },
@@ -123,19 +128,19 @@ export const introduction_data = {
   },
   en: {
     title: "INTRODUCTION",
-    welcome: "Welcome Valued Clients and Partners to POLARIS CONSULTANTS!",
+    welcome: "Welcome Valued Clients and Partners to POLARIS!",
     introductory_paragraphs: [
       "Inspired by Polaris – the North Star, the brightest guiding star in the night sky – POLARIS CONSULTANTS was established with the vision of becoming a trusted \"guiding compass,\" delivering optimal consulting, architectural, and structural design solutions for every project.",
       "We understand that a project is not merely a physical space, but a foundation for long-term development and sustainable living. Powered by a dedicated team of architects and engineers with deep technical expertise and modern design thinking, POLARIS CONSULTANTS is committed to providing creative architectural solutions, robust structural integrity, and cost optimization for investors.",
     ],
     company: {
       title:
-        "POLARIS CONSTRUCTION DESIGN CONSULTING COMPANY LIMITED (POLARIS CONSULTANTS)",
+        "POLARIS CONSTRUCTION DESIGN CONSULTING CO., LTD",
       facts: [
         {
-          id: "establishment-date",
-          label: "Date of Establishment",
-          value: "October 21, 2026",
+          id: "representative",
+          label: "Representative",
+          value: "Bach Quoc Khanh",
         },
         {
           id: "enterprise-number",
@@ -150,13 +155,18 @@ export const introduction_data = {
         {
           id: "branch-office",
           label: "Branch Office",
-          value: "Green Topaz Tower, Bcons City Complex",
+          value: "Green Topaz Tower, Bcons City Complex, Ho Chi Minh City",
         },
         {
           id: "operations-team",
           label: "Operations Team",
           value:
-            "Architects, Civil Engineers, Structural Engineers, Electrical Engineers, Mechanical & Plumbing (M&P) and HVAC Engineers",
+            "Architects, Civil Engineers, Structural Engineers, MEP Engineers",
+        },
+        {
+          id: "establishment-date",
+          label: "Date of Establishment",
+          value: "October 21, 2026",
         },
       ],
     },
