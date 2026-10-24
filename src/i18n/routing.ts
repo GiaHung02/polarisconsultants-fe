@@ -22,6 +22,10 @@ export const routing = defineRouting({
       vi: '/doi-ngu',
       en: '/team'
     },
+    '/career': {
+      vi: '/tuyen-dung',
+      en: '/career'
+    },
     '/design-consultant': {
       vi: '/tu-van-thiet-ke',
       en: '/design-consultant'

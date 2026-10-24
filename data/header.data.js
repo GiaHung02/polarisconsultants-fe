@@ -9,7 +9,7 @@ export const header_data = {
         {
           id: 1,
           name: "Tuyển Dụng",
-          slug: "#",
+          slug: "/vi/tuyen-dung",
         },
       ],
     },
@@ -93,7 +93,7 @@ export const header_data = {
         {
           id: 1,
           name: "Careers",
-          slug: "#",
+          slug: "/en/career",
         },
       ],
     },
