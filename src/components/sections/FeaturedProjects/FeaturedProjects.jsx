@@ -28,6 +28,9 @@ function ProjectCard({ item }) {
           {item.title && (
             <h3 className={styles.project_title}>{item.title}</h3>
           )}
+          {item.address && (
+            <p className={styles.project_address}>{item.address}</p>
+          )}
         </div>
       </div>
     </article>

@@ -96,6 +96,7 @@
 .card {
   height: 100%;
   background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .image_wrapper {
@@ -105,22 +106,33 @@
 
   &::after {
     position: absolute;
-    inset: 35% 0 0;
+    inset: 0;
     z-index: 1;
     content: "";
-    background: linear-gradient(to bottom, transparent, rgb(0 0 0 / 75%));
+    background:
+      linear-gradient(to bottom, transparent 45%, rgb(0 0 0 / 75%)),
+      transparent;
     pointer-events: none;
+    transition: background-color var(--transition-base);
   }
 }
 
 .image {
   object-fit: cover;
-  transition: transform var(--transition-slow);
+  transition:
+    filter var(--transition-base),
+    transform var(--transition-slow);
 }
 
-.card_link:hover .image,
+.card:hover .image,
 .card_link:focus-visible .image {
+  filter: blur(2px);
   transform: scale(1.04);
+}
+
+.card:hover .image_wrapper::after,
+.card_link:focus-visible .image_wrapper::after {
+  background-color: rgb(0 0 0 / 60%);
 }
 
 .card_content {
@@ -132,20 +144,45 @@
   padding: var(--spacing-lg);
 }
 
-.category {
-  margin-bottom: var(--spacing-xs);
-  color: var(--color-white);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  opacity: 0.8;
-  text-transform: uppercase;
-}
-
 .project_title {
   color: var(--color-white);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-normal);
+}
+
+.project_address {
+  max-height: 0;
+  margin-top: var(--spacing-xs);
+  overflow: hidden;
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  opacity: 0;
+  transform: translateY(var(--spacing-xs));
+  transition:
+    max-height var(--transition-base),
+    opacity var(--transition-base),
+    transform var(--transition-base);
+}
+
+.card:hover .project_address,
+.card_link:focus-visible .project_address {
+  max-height: 4.5em;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: none) {
+  .image_wrapper::after {
+    background-color: rgb(0 0 0 / 60%);
+  }
+
+  .project_address {
+    max-height: 4.5em;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @include respond-tablet() {
@@ -170,7 +207,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .slider :global(.swiper-wrapper),
-  .image {
+  .image,
+  .image_wrapper::after,
+  .project_address {
     transition-duration: 0ms !important;
   }
 }

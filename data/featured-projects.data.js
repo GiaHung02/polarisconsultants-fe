@@ -9,6 +9,7 @@ export const featured_projects_data = {
         alt: "Dự án nổi bật 01",
         category: "Dự án",
         title: "Dự án 01",
+        address: "Địa chỉ dự án 01",
       },
       {
         id: 2,
@@ -16,6 +17,7 @@ export const featured_projects_data = {
         alt: "Dự án nổi bật 02",
         category: "Dự án",
         title: "Dự án 02",
+        address: "Địa chỉ dự án 02",
       },
       {
         id: 3,
@@ -23,6 +25,7 @@ export const featured_projects_data = {
         alt: "Dự án nổi bật 03",
         category: "Dự án",
         title: "Dự án 03",
+        address: "Địa chỉ dự án 03",
       },
       {
         id: 4,
@@ -30,6 +33,7 @@ export const featured_projects_data = {
         alt: "Dự án nổi bật 04",
         category: "Dự án",
         title: "Dự án 04",
+        address: "Địa chỉ dự án 04",
       },
       {
         id: 5,
@@ -37,6 +41,7 @@ export const featured_projects_data = {
         alt: "Dự án nổi bật 05",
         category: "Dự án",
         title: "Dự án 05",
+        address: "Địa chỉ dự án 05",
       },
       {
         id: 6,
@@ -44,6 +49,7 @@ export const featured_projects_data = {
         alt: "Dự án nổi bật 06",
         category: "Dự án",
         title: "Dự án 06",
+        address: "Địa chỉ dự án 06",
       },
     ],
   },
@@ -57,6 +63,7 @@ export const featured_projects_data = {
         alt: "Featured project 01",
         category: "Project",
         title: "Project 01",
+        address: "Project address 01",
       },
       {
         id: 2,
@@ -64,6 +71,7 @@ export const featured_projects_data = {
         alt: "Featured project 02",
         category: "Project",
         title: "Project 02",
+        address: "Project address 02",
       },
       {
         id: 3,
@@ -71,6 +79,7 @@ export const featured_projects_data = {
         alt: "Featured project 03",
         category: "Project",
         title: "Project 03",
+        address: "Project address 03",
       },
       {
         id: 4,
@@ -78,6 +87,7 @@ export const featured_projects_data = {
         alt: "Featured project 04",
         category: "Project",
         title: "Project 04",
+        address: "Project address 04",
       },
       {
         id: 5,
@@ -85,6 +95,7 @@ export const featured_projects_data = {
         alt: "Featured project 05",
         category: "Project",
         title: "Project 05",
+        address: "Project address 05",
       },
       {
         id: 6,
@@ -92,6 +103,7 @@ export const featured_projects_data = {
         alt: "Featured project 06",
         category: "Project",
         title: "Project 06",
+        address: "Project address 06",
       },
     ],
   },
