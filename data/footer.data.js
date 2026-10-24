@@ -7,7 +7,7 @@ export const footer_data = {
     navigation: [
       { id: 1, name: "Trang chủ", href: "" },
       { id: 2, name: "Dự án nổi bật", href: "#featured-projects" },
-      { id: 3, name: "Giới thiệu" },
+      { id: 3, name: "Giới thiệu", href: "/gioi-thieu" },
       { id: 4, name: "Tin tức" },
     ],
     services_title: "Lĩnh vực kinh doanh",
@@ -26,7 +26,7 @@ export const footer_data = {
     navigation: [
       { id: 1, name: "Home", href: "" },
       { id: 2, name: "Featured projects", href: "#featured-projects" },
-      { id: 3, name: "About us" },
+      { id: 3, name: "Introduction", href: '/introduction' },
       { id: 4, name: "News" },
     ],
     services_title: "Our expertise",

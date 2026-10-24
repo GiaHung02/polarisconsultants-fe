@@ -112,18 +112,18 @@ export const header_data = {
           subcategories: [
             {
               id: 11,
-              name: "Design Consulting",
-              slug: "/en/design-consulting",
+              name: "Design Consultant",
+              slug: "/en/design-consultant",
             },
             {
               id: 12,
-              name: "Design Appraisal",
+              name: "Design Verification",
               slug: "/en/design-appraisal",
             },
             {
               id: 13,
-              name: "Management Consulting",
-              slug: "/en/management-consulting",
+              name: "Project Management Consultancy",
+              slug: "/en/project-management-consultancy",
             },
           ],
         },

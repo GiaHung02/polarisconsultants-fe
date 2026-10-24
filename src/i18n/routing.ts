@@ -22,17 +22,17 @@ export const routing = defineRouting({
       vi: '/doi-ngu',
       en: '/team'
     },
-    '/design-consulting': {
+    '/design-consultant': {
       vi: '/tu-van-thiet-ke',
-      en: '/design-consulting'
+      en: '/design-consultant'
     },
-    '/design-appraisal': {
+    '/design-verification': {
       vi: '/tham-tra-thiet-ke',
-      en: '/design-appraisal'
+      en: '/design-verification'
     },
-    '/management-consulting': {
+    '/project-management-consultancy': {
       vi: '/tu-van-quan-ly',
-      en: '/management-consulting'
+      en: '/project-management-consultancy'
     }
   }
 });
