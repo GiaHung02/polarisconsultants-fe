@@ -37,10 +37,10 @@ export const company_overview_data = {
     ],
   },
   en: {
-    eyebrow: "Polaris Design & Construction Consulting Co., Ltd.",
-    title: "A leading reputable construction contractor in Vietnam",
+    eyebrow: "Polaris Construction Design Consulting Co., Ltd.",
+    title: "Operating in Civil, Industrial, MEP, and Interior and Exterior Design",
     description:
-      "Building on strong internal capabilities, Polaris aims to become an icon of Vietnam's construction industry and steadily expand its international presence.",
+      "Pioneering through innovative solutions and technology, Polaris aspires to shape the future of Vietnam's construction industry while bringing Vietnamese expertise to the global stage.",
     stats: [
       {
         id: "founded",
