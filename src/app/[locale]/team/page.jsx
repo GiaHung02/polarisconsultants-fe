@@ -14,7 +14,7 @@ export default async function TeamPage({ params }) {
           <p className={style.description}>{content.description}</p>
         </header>
 
-        <ul className={style.member_grid}>
+        {/* <ul className={style.member_grid}>
           {content.members.map((member, index) => (
             <li className={style.member_card} key={member.id}>
               <div className={style.portrait} aria-hidden="true">
@@ -29,7 +29,7 @@ export default async function TeamPage({ params }) {
               </div>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </article>
   );
