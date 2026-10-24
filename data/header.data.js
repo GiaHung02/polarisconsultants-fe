@@ -29,17 +29,17 @@ export const header_data = {
             {
               id: 11,
               name: "Tư Vấn Thiết Kế",
-              slug: "#",
+              slug: "/vi/tu-van-thiet-ke",
             },
             {
               id: 12,
               name: "Thẩm tra thiết kế",
-              slug: "#",
+              slug: "/vi/tham-tra-thiet-ke",
             },
             {
               id: 13,
               name: "Tư vấn quản lý",
-              slug: "#",
+              slug: "/vi/tu-van-quan-ly",
             },
           ],
         },
@@ -113,17 +113,17 @@ export const header_data = {
             {
               id: 11,
               name: "Design Consulting",
-              slug: "#",
+              slug: "/en/design-consulting",
             },
             {
               id: 12,
               name: "Design Appraisal",
-              slug: "#",
+              slug: "/en/design-appraisal",
             },
             {
               id: 13,
               name: "Management Consulting",
-              slug: "#",
+              slug: "/en/management-consulting",
             },
           ],
         },

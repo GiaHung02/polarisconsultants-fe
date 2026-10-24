@@ -21,6 +21,18 @@ export const routing = defineRouting({
     '/team': {
       vi: '/doi-ngu',
       en: '/team'
+    },
+    '/design-consulting': {
+      vi: '/tu-van-thiet-ke',
+      en: '/design-consulting'
+    },
+    '/design-appraisal': {
+      vi: '/tham-tra-thiet-ke',
+      en: '/design-appraisal'
+    },
+    '/management-consulting': {
+      vi: '/tu-van-quan-ly',
+      en: '/management-consulting'
     }
   }
 });
