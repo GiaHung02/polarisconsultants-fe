@@ -37,7 +37,7 @@ export const featured_projects_data = {
       },
       {
         id: 5,
-        image: "/images/hero-image-5.jpg",
+        image: "/images/featured-projects/project-5.jpg",
         alt: "Dự án nổi bật 05",
         category: "Dự án",
         title: "Dự án 05",
@@ -45,7 +45,15 @@ export const featured_projects_data = {
       },
       {
         id: 6,
-        image: "/images/hero-image-1.jpg",
+        image: "/images/featured-projects/project-6.jpg",
+        alt: "Dự án nổi bật 06",
+        category: "Dự án",
+        title: "Dự án 06",
+        address: "Địa chỉ dự án 06",
+      },
+      {
+        id: 7,
+        image: "/images/featured-projects/project-7.jpg",
         alt: "Dự án nổi bật 06",
         category: "Dự án",
         title: "Dự án 06",
@@ -91,7 +99,7 @@ export const featured_projects_data = {
       },
       {
         id: 5,
-        image: "/images/hero-image-5.jpg",
+        image: "/images/featured-projects/project-5.jpg",
         alt: "Featured project 05",
         category: "Project",
         title: "Project 05",
@@ -99,7 +107,15 @@ export const featured_projects_data = {
       },
       {
         id: 6,
-        image: "/images/hero-image-1.jpg",
+        image: "/images/featured-projects/project-6.jpg",
+        alt: "Featured project 06",
+        category: "Project",
+        title: "Project 06",
+        address: "Project address 06",
+      },
+      {
+        id: 7,
+        image: "/images/featured-projects/project-7.jpg",
         alt: "Featured project 06",
         category: "Project",
         title: "Project 06",

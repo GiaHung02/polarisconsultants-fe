@@ -8,7 +8,7 @@ export const team_data = {
       {
         id: "bach-quoc-khanh",
         name: "Bạch Quốc Khánh",
-        role: "Đại diện theo pháp luật",
+        role: "Giám Đốc",
         initials: "BK",
       },
       {
@@ -28,7 +28,7 @@ export const team_data = {
       {
         id: "bach-quoc-khanh",
         name: "Bach Quoc Khanh",
-        role: "Legal Representative",
+        role: "Director",
         initials: "BK",
       },
       {
