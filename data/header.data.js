@@ -18,7 +18,7 @@ export const header_data = {
         {
           id: 2,
           name: "Giới Thiệu",
-          slug: "/vi/introduction",
+          slug: "/vi/gioi-thieu",
           subcategories: [],
         },
         {
@@ -71,13 +71,13 @@ export const header_data = {
         {
           id: 7,
           name: "Liên Hệ",
-          slug: "/vi/contact",
+          slug: "/vi/lien-he",
           subcategories: [],
         },
         {
           id: 8,
           name: "Đội Ngũ",
-          slug: "/vi/team",
+          slug: "/vi/doi-ngu",
           subcategories: [],
         },
       ],

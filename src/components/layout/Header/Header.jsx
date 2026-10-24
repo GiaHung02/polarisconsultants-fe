@@ -6,8 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { header_data } from "@/data/header.data";
+import { Link as LocaleLink, usePathname } from "@/src/i18n/navigation";
 
 export default function Header({ locale }) {
+    const pathname = usePathname();
     const [is_mobile_menu_open, set_is_mobile_menu_open] = useState(false);
     const [open_category_id, set_open_category_id] = useState(null);
     const menu_button_ref = useRef(null);
@@ -22,11 +24,11 @@ export default function Header({ locale }) {
     const language_label = is_english ? "Language" : "Ngôn ngữ";
     const all_categories = [...main_header.left, ...main_header.right];
     const current_language = is_english
-        ? { name: "English", icon: "/images/language/en.svg", href: "/en" }
-        : { name: "Tiếng Việt", icon: "/images/language/vn.svg", href: "/vi" };
+        ? { locale: "en", name: "English", icon: "/images/language/en.svg" }
+        : { locale: "vi", name: "Tiếng Việt", icon: "/images/language/vn.svg" };
     const alternative_language = is_english
-        ? { name: "Tiếng Việt", icon: "/images/language/vn.svg", href: "/vi" }
-        : { name: "English", icon: "/images/language/en.svg", href: "/en" };
+        ? { locale: "vi", name: "Tiếng Việt", icon: "/images/language/vn.svg" }
+        : { locale: "en", name: "English", icon: "/images/language/en.svg" };
     useEffect(() => {
         if (!is_mobile_menu_open) {
             return undefined;
@@ -107,9 +109,10 @@ export default function Header({ locale }) {
                             </Link>
                         ))}
                         <div className={style.language_selector}>
-                            <Link
+                            <LocaleLink
                                 className={style.language_link}
-                                href={current_language.href}
+                                href={pathname}
+                                locale={current_language.locale}
                                 aria-label={current_language.name}
                             >
                                 <Image
@@ -119,12 +122,13 @@ export default function Header({ locale }) {
                                     height={24}
                                     unoptimized
                                 />
-                            </Link>
+                            </LocaleLink>
                             <ul className={style.language_list}>
                                 <li>
-                                    <Link
+                                    <LocaleLink
                                         className={style.language_link}
-                                        href={alternative_language.href}
+                                        href={pathname}
+                                        locale={alternative_language.locale}
                                         aria-label={alternative_language.name}
                                     >
                                         <Image
@@ -134,7 +138,7 @@ export default function Header({ locale }) {
                                             height={24}
                                             unoptimized
                                         />
-                                    </Link>
+                                    </LocaleLink>
                                 </li>
                             </ul>
                         </div>
@@ -302,12 +306,13 @@ export default function Header({ locale }) {
                     <span className={style.mobile_language_label}>{language_label}</span>
                     <div className={style.mobile_language_options}>
                         {[current_language, alternative_language].map((language, index) => (
-                            <Link
-                                key={language.href}
+                            <LocaleLink
+                                key={language.locale}
                                 className={clsx(style.mobile_language_link, {
                                     [style.is_active]: index === 0,
                                 })}
-                                href={language.href}
+                                href={pathname}
+                                locale={language.locale}
                                 aria-label={language.name}
                                 aria-current={index === 0 ? "page" : undefined}
                                 tabIndex={is_mobile_menu_open ? 0 : -1}
@@ -321,7 +326,7 @@ export default function Header({ locale }) {
                                     unoptimized
                                 />
                                 <span>{language.name}</span>
-                            </Link>
+                            </LocaleLink>
                         ))}
                     </div>
                 </div>

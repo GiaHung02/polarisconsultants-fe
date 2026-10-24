@@ -5,5 +5,22 @@ export const routing = defineRouting({
   locales: ['vi', 'en'],
  
   // Used when no locale matches
-  defaultLocale: 'vi'
+  defaultLocale: 'vi',
+
+  // Keep one internal App Router route while exposing locale-specific URLs.
+  pathnames: {
+    '/': '/',
+    '/introduction': {
+      vi: '/gioi-thieu',
+      en: '/introduction'
+    },
+    '/contact': {
+      vi: '/lien-he',
+      en: '/contact'
+    },
+    '/team': {
+      vi: '/doi-ngu',
+      en: '/team'
+    }
+  }
 });
