@@ -77,7 +77,7 @@ export const header_data = {
         {
           id: 8,
           name: "Đội Ngũ",
-          slug: "#",
+          slug: "/vi/team",
           subcategories: [],
         },
       ],
@@ -161,7 +161,7 @@ export const header_data = {
         {
           id: 8,
           name: "Team",
-          slug: "#",
+          slug: "/en/team",
           subcategories: [],
         },
       ],
