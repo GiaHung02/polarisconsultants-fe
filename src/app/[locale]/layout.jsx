@@ -1,6 +1,7 @@
 import { Manrope } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/src/i18n/routing";
+import { Analytics } from "@vercel/analytics/next"
 import "../../../styles/global.scss";
 import Header from "@/src/components/layout/Header/Header";
 import Footer from "@/src/components/layout/Footer/Footer";
@@ -31,7 +32,10 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider>
           <Header locale={locale} />
 
-          <main>{children}</main>
+          <main>
+            {children}
+            <Analytics />
+          </main>
 
           <Footer locale={locale} />
         </NextIntlClientProvider>
