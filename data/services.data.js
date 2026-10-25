@@ -131,10 +131,66 @@ export const services_data = {
   },
   management_consulting: {
     vi: {
-      title: "Tư vấn quản lý",
+      title: "Tư vấn Quản lý",
+      description:
+        "POLARIS CONSULTANTS đóng vai trò là đại diện tin cậy của Chủ đầu tư tại hiện trường và trên bàn đàm phán, đảm bảo dự án được triển khai xuyên suốt: đúng tiến độ, đạt chuẩn chất lượng cao nhất và kiểm soát chặt chẽ ngân sách tài chính.",
+      services: [
+        {
+          id: "project-management-consulting",
+          title: "Tư vấn Quản lý Dự án (PMS)",
+          description:
+            "Hoạch định tiến độ tổng thể, kiểm soát ngân sách, quản trị rủi ro, lập kế hoạch đấu thầu và điều phối nhịp nhàng giữa các bên liên quan từ thiết kế đến khi bàn giao.",
+        },
+        {
+          id: "construction-supervision-consulting",
+          title: "Tư vấn Giám sát Thi công (Supervisor)",
+          description:
+            "Đội ngũ kỹ sư túc trực tại công trường thực hiện kiểm tra nghiêm ngặt quy trình thi công cốt thép, bê tông, hoàn thiện, kiểm định chất lượng vật tư đầu vào và giám sát an toàn lao động tuyệt đối.",
+        },
+        {
+          id: "building-inspection-and-safety-assessment",
+          title: "Kiểm định & Đánh giá An toàn Công trình",
+          description:
+            "Thực hiện khảo sát hiện trạng, kiểm định chất lượng kết cấu định kỳ hoặc đánh giá chịu lực thực tế để phục vụ công tác cải tạo, nâng cấp, chuyển đổi công năng công trình cũ.",
+        },
+        {
+          id: "project-legal-procedures-consulting",
+          title: "Tư vấn Thủ tục Pháp lý Dự án",
+          description:
+            "Hỗ trợ toàn diện các thủ tục pháp lý từ xin giấy phép xây dựng, lập hồ sơ nghiệm thu hoàn thành hạng mục cho đến thủ tục hoàn công đưa công trình vào vận hành chính thức.",
+        },
+      ],
     },
     en: {
       title: "Management Consulting",
+      description:
+        "POLARIS CONSULTANTS serves as the Client's trusted representative both on site and at the negotiating table, ensuring seamless project delivery on schedule, to the highest quality standards, and under strict financial control.",
+      services: [
+        {
+          id: "project-management-consulting",
+          title: "Project Management Consulting (PMS)",
+          description:
+            "We develop the overall schedule, control budgets, manage risks, plan procurement, and coordinate all stakeholders smoothly from design through project handover.",
+        },
+        {
+          id: "construction-supervision-consulting",
+          title: "Construction Supervision Consulting",
+          description:
+            "Our on-site engineers rigorously inspect reinforcement, concrete, and finishing works, verify the quality of incoming materials, and maintain strict occupational safety supervision.",
+        },
+        {
+          id: "building-inspection-and-safety-assessment",
+          title: "Building Inspection & Safety Assessment",
+          description:
+            "We conduct condition surveys, periodic structural quality inspections, and practical load-bearing assessments to support the renovation, upgrading, or adaptive reuse of existing buildings.",
+        },
+        {
+          id: "project-legal-procedures-consulting",
+          title: "Project Legal Procedures Consulting",
+          description:
+            "We provide comprehensive support for legal procedures, from construction permit applications and completion acceptance documentation to final completion formalities required for official operation.",
+        },
+      ],
     },
   },
 };

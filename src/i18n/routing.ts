@@ -34,7 +34,7 @@ export const routing = defineRouting({
       vi: '/tham-tra-thiet-ke',
       en: '/design-verification'
     },
-    '/project-management-consultancy': {
+    '/management-consulting': {
       vi: '/tu-van-quan-ly',
       en: '/project-management-consultancy'
     }
