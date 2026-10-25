@@ -5,11 +5,15 @@ const images = [
   },
   {
     id: 2,
-    image: "/images/hero-image-3.jpg",
+    image: "/images/hero-image-2.jpg",
   },
   {
     id: 3,
-    image: "/images/hero-image-5.jpg",
+    image: "/images/hero-image-3.jpg",
+  },
+  {
+    id: 4,
+    image: "/images/hero-image-4.jpg",
   },
 ];
 

@@ -14,6 +14,7 @@
 }
 
 .slider {
+
   :global(.swiper-button-prev),
   :global(.swiper-button-next) {
     width: 3rem;
@@ -43,10 +44,12 @@
 
 .image {
   object-fit: cover;
+  object-position: top;
 }
 
 @include respond-tablet() {
   .slider {
+
     :global(.swiper-button-prev),
     :global(.swiper-button-next) {
       display: none;
