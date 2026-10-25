@@ -11,10 +11,6 @@ const images = [
     id: 3,
     image: "/images/hero-image-3.jpg",
   },
-  {
-    id: 4,
-    image: "/images/hero-image-4.jpg",
-  },
 ];
 
 export const hero_data = {
