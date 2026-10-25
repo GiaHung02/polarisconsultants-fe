@@ -11,7 +11,28 @@ import styles from "./FeaturedProjects.module.scss";
 
 const MAX_VISIBLE_PROJECTS = 4;
 
-function ProjectCard({ item }) {
+function ProjectCard({ item, detail_labels }) {
+  const project_details = [
+    {
+      key: "address",
+      icon: "/icons/location-pin-icon.svg",
+      label: detail_labels.address,
+      value: item.address,
+    },
+    {
+      key: "field",
+      icon: "/icons/hard-hat-icon.svg",
+      label: detail_labels.field,
+      value: item.field,
+    },
+    {
+      key: "scale",
+      icon: "/icons/house-icon.svg",
+      label: detail_labels.scale,
+      value: item.scale,
+    },
+  ].filter((detail) => detail.value);
+
   const content = (
     <article className={styles.card}>
       <div className={styles.image_wrapper}>
@@ -28,8 +49,24 @@ function ProjectCard({ item }) {
           {item.title && (
             <h3 className={styles.project_title}>{item.title}</h3>
           )}
-          {item.address && (
-            <p className={styles.project_address}>{item.address}</p>
+          {project_details.length > 0 && (
+            <div className={styles.project_details}>
+              {project_details.map(({ key, icon, label, value }) => (
+                <p className={styles.project_detail} key={key}>
+                  <Image
+                    src={icon}
+                    alt=""
+                    aria-hidden="true"
+                    width={16}
+                    height={16}
+                  />
+                  <span>
+                    <span className={styles.visually_hidden}>{label}: </span>
+                    {value}
+                  </span>
+                </p>
+              ))}
+            </div>
           )}
         </div>
       </div>
@@ -48,7 +85,7 @@ function ProjectCard({ item }) {
 }
 
 export default function FeaturedProjects({ projects }) {
-  const { title, description, items } = projects;
+  const { title, description, detail_labels, items } = projects;
   const title_id = useId();
 
   if (!items?.length) {
@@ -74,10 +111,10 @@ export default function FeaturedProjects({ projects }) {
           autoplay={
             has_desktop_overflow
               ? {
-                  delay: 3500,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
-                }
+                delay: 3500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }
               : false
           }
           navigation={has_desktop_overflow}
@@ -93,7 +130,7 @@ export default function FeaturedProjects({ projects }) {
         >
           {items.map((item, index) => (
             <SwiperSlide key={item.id ?? index}>
-              <ProjectCard item={item} />
+              <ProjectCard item={item} detail_labels={detail_labels} />
             </SwiperSlide>
           ))}
         </Swiper>
