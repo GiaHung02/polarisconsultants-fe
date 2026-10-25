@@ -67,10 +67,66 @@ export const services_data = {
   },
   design_appraisal: {
     vi: {
-      title: "Thẩm tra thiết kế",
+      title: "Thẩm tra Thiết kế",
+      description:
+        "Là đơn vị gác cổng kỹ thuật độc lập, POLARIS CONSULTANTS mang đến cái nhìn khách quan, sắc sảo nhằm rà soát, phát hiện các điểm chưa tối ưu hoặc rủi ro tiềm ẩn trong hồ sơ thiết kế, từ đó bảo vệ tối đa quyền lợi và ngân sách của Chủ đầu tư.",
+      services: [
+        {
+          id: "structural-safety-appraisal",
+          title: "Thẩm tra An toàn Kết cấu",
+          description:
+            "Phân tích, kiểm tra độc lập các mô hình tính toán, khả năng chịu tải của hệ khung kết cấu, giải pháp móng để triệt tiêu mọi rủi ro kỹ thuật.",
+        },
+        {
+          id: "me-and-specialized-engineering-appraisal",
+          title: "Thẩm tra M&E & Kỹ thuật Chuyên ngành",
+          description:
+            "Rà soát tính đồng bộ, khả năng vận hành liên tục và mức độ an toàn phòng cháy chữa cháy, điện nước của toàn bộ hệ thống cơ điện.",
+        },
+        {
+          id: "cost-estimate-and-total-investment-appraisal",
+          title: "Thẩm tra Dự toán & Tổng mức Đầu tư",
+          description:
+            "Đối chiếu khối lượng, bóc tách chi tiết và kiểm tra đơn giá, định mức để đảm bảo chi phí xây dựng nằm trong tầm kiểm soát, tránh thất thoát, đội vốn.",
+        },
+        {
+          id: "code-and-standard-compliance-appraisal",
+          title: "Thẩm tra Tuân thủ Quy chuẩn - Tiêu chuẩn",
+          description:
+            "Rà soát toàn bộ hồ sơ thiết kế đối chiếu với Luật Xây dựng, các Quy chuẩn kỹ thuật quốc gia (QCVN) và Tiêu chuẩn xây dựng (TCVN) để đảm bảo điều kiện pháp lý khi xin cấp phép và thi công.",
+        },
+      ],
     },
     en: {
-      title: "Design Appraisal",
+      title: "Design Verification",
+      description:
+        "As an independent technical gatekeeper, POLARIS CONSULTANTS provides an objective and discerning review to identify inefficiencies and potential risks within design documentation, thereby protecting the Client's interests and budget to the greatest extent possible.",
+      services: [
+        {
+          id: "structural-safety-appraisal",
+          title: "Structural Safety Appraisal",
+          description:
+            "We independently analyze and verify calculation models, the load-bearing capacity of structural frames, and foundation solutions to eliminate technical risks.",
+        },
+        {
+          id: "me-and-specialized-engineering-appraisal",
+          title: "M&E & Specialized Engineering Appraisal",
+          description:
+            "We review the integration, continuous operability, fire safety, electrical safety, and water-system performance of the complete mechanical and electrical system.",
+        },
+        {
+          id: "cost-estimate-and-total-investment-appraisal",
+          title: "Cost Estimate & Total Investment Appraisal",
+          description:
+            "We cross-check quantities, review detailed take-offs, and verify unit prices and cost norms to keep construction expenditure under control and prevent losses or cost overruns.",
+        },
+        {
+          id: "code-and-standard-compliance-appraisal",
+          title: "Code & Standard Compliance Appraisal",
+          description:
+            "We review the complete design documentation against the Law on Construction, Vietnamese National Technical Regulations (QCVN), and Vietnamese National Standards (TCVN) to ensure legal eligibility for permitting and construction.",
+        },
+      ],
     },
   },
   management_consulting: {

@@ -1,0 +1,103 @@
+@use "@/styles/index.scss" as *;
+
+.design_appraisal {
+  padding-block: var(--spacing-5xl);
+  color: var(--color-primary);
+  background:
+    radial-gradient(circle at 92% 4%, rgb(237 125 49 / 13%), transparent 28rem),
+    linear-gradient(180deg, rgb(18 38 75 / 4%), var(--color-white) 32rem);
+}
+
+.introduction {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-accent-2);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.14em;
+  line-height: var(--line-height-normal);
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    width: 40px;
+    height: 2px;
+    content: "";
+    background-color: currentcolor;
+  }
+}
+
+.description {
+  margin: var(--spacing-2xl) auto 0;
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-body-text);
+  text-align: justify;
+}
+
+.service_list {
+  margin-top: var(--spacing-5xl);
+}
+
+.service {
+  & + & {
+    margin-top: var(--spacing-4xl);
+  }
+}
+
+.service_title {
+  padding-bottom: var(--spacing-md);
+  color: var(--color-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+  line-height: var(--line-height-normal);
+  border-bottom: 1px solid rgb(18 38 75 / 18%);
+}
+
+.service_description {
+  margin-top: var(--spacing-lg);
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-body-text);
+  text-align: justify;
+}
+
+@include respond-tabletMedium() {
+  .design_appraisal {
+    padding-block: var(--spacing-4xl);
+  }
+
+  .service_list {
+    margin-top: var(--spacing-4xl);
+  }
+}
+
+@include respond-mobile() {
+  .design_appraisal {
+    padding-block: var(--spacing-3xl);
+  }
+
+  .title {
+    letter-spacing: 0.08em;
+
+    &::before,
+    &::after {
+      width: 24px;
+    }
+  }
+
+  .description {
+    margin-top: var(--spacing-xl);
+  }
+
+  .service + .service {
+    margin-top: var(--spacing-3xl);
+  }
+}
