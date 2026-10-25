@@ -59,12 +59,7 @@ export const header_data = {
             {
               id: 51,
               name: "Dự Án Nổi Bật",
-              slug: "#featured-projects",
-            },
-            {
-              id: 52,
-              name: "Dự Án Đang Triển Khai",
-              slug: "#",
+              slug: "/vi#featured-projects",
             },
           ],
         },
@@ -127,12 +122,6 @@ export const header_data = {
             },
           ],
         },
-        {
-          id: 4,
-          name: "News",
-          slug: "",
-          subcategories: [],
-        },
       ],
       right: [
         {
@@ -143,12 +132,7 @@ export const header_data = {
             {
               id: 51,
               name: "Featured Projects",
-              slug: "#featured-projects",
-            },
-            {
-              id: 52,
-              name: "Ongoing Projects",
-              slug: "#",
+              slug: "/en#featured-projects",
             },
           ],
         },
