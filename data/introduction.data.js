@@ -22,7 +22,7 @@ export const introduction_data = {
         {
           id: "head-office",
           label: "Văn phòng Trụ sở chính",
-          value: "phường Phú Thủy, Tỉnh Lâm Đồng.",
+          value: "phường Phú Thủy, tỉnh Lâm Đồng",
         },
         {
           id: "branch-office",
