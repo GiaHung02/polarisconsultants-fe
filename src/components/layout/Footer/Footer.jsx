@@ -51,7 +51,14 @@ export default function Footer({ locale = "vi" }) {
             <h2 className={styles.column_title}>{content.services_title}</h2>
             <ul className={styles.service_list}>
               {content.services.map((service) => (
-                <li key={service}>{service}</li>
+                <li key={service.href}>
+                  <Link
+                    className={styles.footer_link}
+                    href={`/${locale}${service.href}`}
+                  >
+                    {service.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
