@@ -118,7 +118,7 @@ export const header_data = {
             {
               id: 12,
               name: "Design Verification",
-              slug: "/en/design-appraisal",
+              slug: "/en/design-verification",
             },
             {
               id: 13,
