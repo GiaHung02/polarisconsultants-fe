@@ -43,12 +43,6 @@ export const header_data = {
             },
           ],
         },
-        {
-          id: 4,
-          name: "Tin tức",
-          slug: "",
-          subcategories: [],
-        },
       ],
       right: [
         {
