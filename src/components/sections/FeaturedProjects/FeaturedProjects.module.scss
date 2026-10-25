@@ -161,9 +161,9 @@
   opacity: 0;
   transform: translateY(var(--spacing-xs));
   transition:
-    max-height var(--transition-base),
-    opacity var(--transition-base),
-    transform var(--transition-base);
+    max-height 500ms ease,
+    opacity 500ms ease,
+    transform 500ms ease;
 }
 
 .project_detail {

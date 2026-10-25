@@ -51,9 +51,9 @@ export const featured_projects_data = {
       {
         id: 5,
         image: "/images/featured-projects/project-5.jpg",
-        alt: "Nhà kho Sản xuất Nội thất",
+        alt: "Nhà máy Sản xuất Nội thất",
         category: "Dự án",
-        title: "Nhà kho Sản xuất Nội thất",
+        title: "Nhà Máy Sản xuất Nội thất",
         address: "Xã Hàm Kiệm, tỉnh Lâm Đồng",
         field: "Kiến trúc - Kết cấu - Cơ điện",
         scale: "6500m2",
