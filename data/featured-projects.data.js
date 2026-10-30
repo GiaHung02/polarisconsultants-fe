@@ -63,7 +63,7 @@ export const featured_projects_data = {
         image: "/images/featured-projects/project-6.jpg",
         alt: "Căn hộ Celadon City",
         category: "Dự án",
-        title: "Căn hộ Cao cấp Celadon City",
+        title: "Căn hộ Celadon City",
         address: "Khu đô thị sinh thái Celadon, TP.HCM",
         field: "Nội thất - Cơ điện",
         scale: "75m2",
