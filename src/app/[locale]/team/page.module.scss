@@ -207,6 +207,10 @@
     box-shadow: 0 20px 44px rgb(18 38 75 / 15%);
     transform: translateY(-4px);
   }
+
+  @include respond-mobile() {
+    padding-inline: 20px;
+  }
 }
 
 .employee_label {
