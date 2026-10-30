@@ -1,5 +1,6 @@
 export const team_data = {
   vi: {
+    employee_label: "Nhân viên",
     eyebrow: "ĐỘI NGŨ POLARIS",
     title: "Những người đồng hành kiến tạo giá trị bền vững",
     description:
@@ -58,6 +59,7 @@ export const team_data = {
     ],
   },
   en: {
+    employee_label: "Employee",
     eyebrow: "THE POLARIS TEAM",
     title: "The people behind lasting value",
     description:
@@ -65,7 +67,7 @@ export const team_data = {
     members: [
       {
         id: "1",
-        reports_to: "1",
+        reports_to: null,
         name: "Bach Quoc Khanh",
         role: "Managing Director",
         bachelor_degree: "Engineer in Electrical and Electronic Engineering Technology",
@@ -76,7 +78,7 @@ export const team_data = {
         name: "Le Thien Nhan",
         role: "Deputy Director",
         bachelor_degree: "Engineer in Electrical and Electronic Engineering Technology",
-        // status: "hidden",
+        status: "hidden",
       },
       {
         id: "3",

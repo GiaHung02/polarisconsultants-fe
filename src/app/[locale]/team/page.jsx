@@ -1,13 +1,7 @@
 import { team_data } from "@/data/team.data";
 import style from "./page.module.scss";
 
-function getInitials(name) {
-  const words = name.trim().split(/\s+/);
-
-  return `${words[0][0]}${words.at(-1)[0]}`.toUpperCase();
-}
-
-function MemberBranch({ member, childrenByParent }) {
+function MemberBranch({ member, childrenByParent, employeeLabel }) {
   const children = childrenByParent.get(member.id) ?? [];
 
   return (
@@ -27,8 +21,19 @@ function MemberBranch({ member, childrenByParent }) {
               key={child.id}
               member={child}
               childrenByParent={childrenByParent}
+              employeeLabel={employeeLabel}
             />
           ))}
+        </ul>
+      )}
+
+      {children.length === 0 && (
+        <ul className={style.children}>
+          <li className={style.branch}>
+            <article className={`${style.member_card} ${style.employee_card}`}>
+              <p className={style.employee_label}>{employeeLabel}</p>
+            </article>
+          </li>
         </ul>
       )}
     </li>
@@ -69,6 +74,7 @@ export default async function TeamPage({ params }) {
                 key={member.id}
                 member={member}
                 childrenByParent={childrenByParent}
+                employeeLabel={content.employee_label}
               />
             ))}
           </ul>
